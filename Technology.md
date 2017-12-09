@@ -1,0 +1,1 @@
+This project will use unity and will be coded with c sharp. The project will also use graphics drawn with gimp and similar software. No assets that we did not create will be used.
