@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/TestChange/Testchange.unity
-=======
-- path: Assets/Ingredients/Ingredients.unity
->>>>>>> af2360e407353833ce66a77b350f9b4db722206e
+- path: Assets/FrontDesk/FrontDesk.unity
   isLoaded: 1
   isActive: 1

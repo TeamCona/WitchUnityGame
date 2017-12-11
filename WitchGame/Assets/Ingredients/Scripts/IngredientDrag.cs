@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class IngredientDrag : MonoBehaviour {
 
-	//This section is used to enable the drag feature
-	float distance = 10;
+    //Variables for the navigation buttons
+    public Texture cal;
+    public Texture ing;
+
+    //This section is used to enable the drag feature
+    float distance = 10;
 
 	void OnMouseDrag()
 	{
@@ -22,4 +26,24 @@ public class IngredientDrag : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnGUI()
+    {
+        //Create the buttons that will change the scene or location of the game
+        //Directs user to the caldron using a picture
+        if (GUI.Button(new Rect(Screen.width * .75f, 0, Screen.width * .2f, Screen.height * .1f), cal, ""))
+        {
+            //This button will load the test scene
+            print("Kitchen Button works");
+            Application.LoadLevel(1);
+        }
+
+        //Direscts user to ingredients using a picture
+        if (GUI.Button(new Rect(Screen.width * .5f, 0, Screen.width * .2f, Screen.height * .1f), ing, ""))
+        {
+            //This button will load the scene containing the ingredients
+            print("Ingredients Button works");
+            Application.LoadLevel(2);
+        }
+    }
 }
