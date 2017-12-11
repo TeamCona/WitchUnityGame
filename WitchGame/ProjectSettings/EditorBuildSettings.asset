@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/FrontDesk/FrontDesk.unity
+    guid: 2c5beb7cc26995b408e9a162f7d6f1f8
+  - enabled: 1
+    path: Assets/TestChange/Testchange.unity
+    guid: 0aefa2938f2c2df4fa27dbf5ac2aad92
+  - enabled: 1
+    path: Assets/Ingredients/Ingredients.unity
+    guid: 79166c8afd1720148b2802a076952e53
