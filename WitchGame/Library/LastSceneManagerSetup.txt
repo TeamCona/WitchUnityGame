@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FrontDesk/FrontDesk.unity
+- path: Assets/Ingredients/Ingredients.unity
   isLoaded: 1
   isActive: 1
