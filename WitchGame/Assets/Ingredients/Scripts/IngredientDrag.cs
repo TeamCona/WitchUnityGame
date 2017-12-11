@@ -13,20 +13,38 @@ public class IngredientDrag : MonoBehaviour {
 
 	void OnMouseDrag()
 	{
+		//Need to save previous Position
 		Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, distance);
 		Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 		transform.position = objPosition;
 	}
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	//The ingredient is dropped with no collision
+	private Vector3 prevPosition;
+	private Transform ingredient;
+
+	void OnMouseUp()
+	{
+		transform.position = new Vector3 (0, 0, 0);
 	}
 
+	//The ingredient has been dropped into the cauldron
+	void OnTriggerEnter2D()
+	{
+		Debug.Log ("Trigger touched");
+	}
+
+	void OnTriggerStay2D()
+	{
+		Debug.Log ("Still touching");
+	}
+
+	void OnTriggerExit2D()
+	{
+		Debug.Log ("Exit");
+	}
+
+<<<<<<< HEAD
     private void OnGUI()
     {
         //Create the buttons that will change the scene or location of the game
@@ -46,4 +64,6 @@ public class IngredientDrag : MonoBehaviour {
             Application.LoadLevel(2);
         }
     }
+=======
+>>>>>>> e3e77d4627e1e4dac1616bfd7ddd8e26752fd7b6
 }
