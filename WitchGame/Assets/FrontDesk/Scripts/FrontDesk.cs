@@ -21,7 +21,9 @@ public class FrontDesk : MonoBehaviour {
         //This one uses a string
         if (GUI.Button (new Rect(Screen.width *.5f, 0, Screen.width * .2f, Screen.height* .1f), "Ingredients"))
         {
+            //This button will load the scene containing the ingredients
             print("Ingredients Button works");
+            Application.LoadLevel(2);
         }
 
         //Second button
@@ -29,7 +31,9 @@ public class FrontDesk : MonoBehaviour {
         //Uses temporary picture
         if (GUI.Button (new Rect(Screen.width * .75f, 0, Screen.width * .2f, Screen.height * .1f),cal, ""))
         {
+            //This button will load the test scene
             print("Kitchen Button works");
+            Application.LoadLevel(1);
         }
     }
 
