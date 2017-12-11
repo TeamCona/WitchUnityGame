@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MagicBook/MagicBook.unity
+=======
+- path: Assets/FrontDesk/FrontDesk.unity
+>>>>>>> 7f27aa1a83b469ede4e034600e620a2e251ec4ea
   isLoaded: 1
   isActive: 1
