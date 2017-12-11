@@ -1,4 +1,7 @@
 sceneSetups:
 - path: Assets/FrontDesk/FrontDesk.unity
   isLoaded: 1
+  isActive: 0
+- path: Assets/TestChange/Testchange.unity
+  isLoaded: 1
   isActive: 1
