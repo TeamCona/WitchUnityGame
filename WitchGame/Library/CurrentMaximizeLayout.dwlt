@@ -23,7 +23,11 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 743
+=======
+  controlID: 581
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +127,11 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 492}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 723
+=======
+  controlID: 582
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +155,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 724
+=======
+  controlID: 561
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,14 +247,19 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 22
     speed: 2
     m_Value: 22
+=======
+    m_Target: 16.851177
+    speed: 2
+    m_Value: 16.851177
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_ShowGlobalGrid: 1
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
@@ -328,9 +345,15 @@ MonoBehaviour:
     height: 306
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: b698ffff
     m_LastClickedID: -26442
     m_ExpandedIDs: c098ffffe299ffff46aeffff56b0ffff28b2ffff18b5ffff4cb6ffff12b7ffff88f1ffffa6fbffff00000000
+=======
+    m_SelectedIDs: aef7ffff
+    m_LastClickedID: -2130
+    m_ExpandedIDs: 1afcffff00000000
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -376,7 +399,11 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 701
+=======
+  controlID: 583
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -420,8 +447,13 @@ MonoBehaviour:
     y: 0
     width: 257
     height: 404
+<<<<<<< HEAD
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
+=======
+  m_MinSize: {x: 234, y: 271}
+  m_MaxSize: {x: 10004, y: 10021}
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -472,13 +504,19 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/TestChange/Texture
   m_LastFoldersGridSize: 43
-  m_LastProjectPath: C:\Users\Shona\Desktop\Netproject\WitchGame
+  m_LastProjectPath: C:\Users\sastr\OneDrive\Documents\Computer Science\Year 3\_Net\WitchGame\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 72290000
     m_LastClickedID: 10610
     m_ExpandedIDs: 00000000282700003a270000d8270000da270000b42800006629000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
+    m_ExpandedIDs: 000000001c26000020260000742600007626000000ca9a3bffffff7f
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Test
@@ -506,7 +544,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000282700003a270000d8270000da27000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000001c26000020260000742600007626000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,9 +569,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: b698ffff
     m_LastClickedInstanceID: -26442
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: aef7ffff
+    m_LastClickedInstanceID: -2130
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> 15776e08cdde9e8e35a69561767e1c9ea470b2ba
     m_ExpandedInstanceIDs: 34240000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
