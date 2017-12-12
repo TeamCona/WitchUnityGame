@@ -1,1 +1,4 @@
-This project will use unity and will be coded with c sharp. The project will also use graphics drawn with gimp and similar software. No assets that we did not create will be used.
+<h1>Technology Used</h1> </br>
+This project will use 2D Unity game developer and will be coded with C#.
+The project will also use graphics that we have drawn with gimp and similar software.
+We will not be using pre made assest from the Unity Store.
