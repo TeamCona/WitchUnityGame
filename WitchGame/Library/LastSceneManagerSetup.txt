@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Cauldron/Cauldron.unity
+=======
+- path: Assets/UpgradeShop/UpgradeShop.unity
+>>>>>>> e76fe3e70c56e275ce644396c23578aa26d6ad27
   isLoaded: 1
   isActive: 1
