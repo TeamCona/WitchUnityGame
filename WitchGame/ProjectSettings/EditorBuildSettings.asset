@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FrontDesk/FrontDesk.unity
     guid: 2c5beb7cc26995b408e9a162f7d6f1f8
-  - enabled: 1
-    path: Assets/TestChange/Testchange.unity
-    guid: 0aefa2938f2c2df4fa27dbf5ac2aad92
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Ingredients/Ingredients.unity
     guid: 79166c8afd1720148b2802a076952e53
   - enabled: 1
     path: Assets/MagicBook/MagicBook.unity
     guid: 19afd82887541e44696f0b518cdc61b7
+  - enabled: 1
+    path: Assets/Cauldron/Cauldron.unity
+    guid: 33e280ff28e88a64987aedcc7895a49a
