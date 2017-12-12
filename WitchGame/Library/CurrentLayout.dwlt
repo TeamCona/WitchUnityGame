@@ -45,7 +45,16 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 110
+=======
+<<<<<<< HEAD
+  controlID: 9
+=======
+  controlID: 106
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,6 +153,16 @@ MonoBehaviour:
     width: 1536
     height: 781
   m_MinSize: {x: 950, y: 300}
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  m_MinSize: {x: 950, y: 300}
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -325,19 +344,62 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/FrontDesk/Textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/FrontDesk/Textures
+=======
+<<<<<<< HEAD
+    - Assets/FrontDesk
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/FrontDesk
+=======
+<<<<<<< HEAD
+    - Assets/Ingredients/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Ingredients/Scripts
+=======
+    - Assets/Ingredients
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Ingredients
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Shona\Desktop\Netproject\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 41}
     m_SelectedIDs: 76280000
     m_LastClickedID: 10358
     m_ExpandedIDs: 00000000f8270000fe270000142800003428000080280000082900000a2900000c29000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_SelectedIDs: 28260000
+    m_LastClickedID: 9768
+    m_ExpandedIDs: 000000001a260000d0260000d2260000d426000000ca9a3bffffff7f
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 42270000
+    m_LastClickedID: 10050
+    m_ExpandedIDs: 000000001c27000036270000522700009827000032280000342800003628000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 72260000
+    m_LastClickedID: 9842
+    m_ExpandedIDs: 00000000542600005826000072260000c8260000ca260000cc26000000ca9a3bffffff7f
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: FrontDesk
@@ -365,7 +427,19 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f8270000142800003428000080280000082900000a2900000c290000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000001a2600001e26000038260000d0260000d2260000d4260000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000001c27000036270000322800003428000036280000
+=======
+    m_ExpandedIDs: 000000005426000058260000c8260000ca260000cc260000
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,9 +555,27 @@ MonoBehaviour:
     height: 421
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 74290000
     m_LastClickedID: 10612
     m_ExpandedIDs: 2cceffff44f3fffffef6ffffa0faffff000000005829000074290000
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 56260000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 84e1ffff1afcffff00000000
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 44bafeffc6fbfeff980affffde29ffffdc2dffff2883ffff36d3ffff4cd3ffff18d6ffff2cf5ffff9efbffff00000000d0290000
+=======
+    m_SelectedIDs: 92260000
+    m_LastClickedID: 0
+    m_ExpandedIDs: c0ecffff90f9ffffb6fbffff00000000
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Text (1)
@@ -503,6 +595,16 @@ MonoBehaviour:
     m_SearchString: 
   m_ExpandedScenes:
   - FrontDesk
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  - FrontDesk
+=======
+  - Ingredients
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
+>>>>>>> 5a23f5a9200f020e76cabd4eea4f2ee71287e00e
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
