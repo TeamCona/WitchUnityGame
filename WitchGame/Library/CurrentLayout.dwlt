@@ -42,10 +42,21 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
+<<<<<<< HEAD
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 110
+=======
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 9
+=======
+  controlID: 106
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +154,15 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 300}
+=======
+<<<<<<< HEAD
+  m_MinSize: {x: 950, y: 300}
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -206,7 +225,11 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 731
+<<<<<<< HEAD
+  m_MinSize: {x: 404, y: 492}
+=======
   m_MinSize: {x: 406, y: 492}
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 10
@@ -325,19 +348,47 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/FrontDesk
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/FrontDesk
+=======
+<<<<<<< HEAD
+    - Assets/Ingredients/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Ingredients/Scripts
+=======
+    - Assets/Ingredients
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Ingredients
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sastr\OneDrive\Documents\Computer Science\Year 3\_Net\WitchGame\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 28260000
     m_LastClickedID: 9768
     m_ExpandedIDs: 000000001a260000d0260000d2260000d426000000ca9a3bffffff7f
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 42270000
+    m_LastClickedID: 10050
+    m_ExpandedIDs: 000000001c27000036270000522700009827000032280000342800003628000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 72260000
+    m_LastClickedID: 9842
+    m_ExpandedIDs: 00000000542600005826000072260000c8260000ca260000cc26000000ca9a3bffffff7f
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +416,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000001a2600001e26000038260000d0260000d2260000d4260000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000001c27000036270000322800003428000036280000
+=======
+    m_ExpandedIDs: 000000005426000058260000c8260000ca260000cc260000
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,9 +540,21 @@ MonoBehaviour:
     height: 421
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 56260000
     m_LastClickedID: 0
     m_ExpandedIDs: 84e1ffff1afcffff00000000
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 44bafeffc6fbfeff980affffde29ffffdc2dffff2883ffff36d3ffff4cd3ffff18d6ffff2cf5ffff9efbffff00000000d0290000
+=======
+    m_SelectedIDs: 92260000
+    m_LastClickedID: 0
+    m_ExpandedIDs: c0ecffff90f9ffffb6fbffff00000000
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,7 +573,15 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
+<<<<<<< HEAD
   - FrontDesk
+=======
+<<<<<<< HEAD
+  - FrontDesk
+=======
+  - Ingredients
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -533,14 +612,18 @@ MonoBehaviour:
     width: 918
     height: 421
   m_SceneLighting: 1
+<<<<<<< HEAD
+  lastFramingTime: 515.1925961815779
+=======
   lastFramingTime: 0
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.08928865, y: -0.4921449, z: -9.938134}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -0.08928865, y: -0.4921449, z: -9.938134}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -567,9 +650,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
+    m_Target: 14.047272
+    speed: 2
+    m_Value: 14.047272
+=======
     m_Target: 10
     speed: 2
     m_Value: 10
+>>>>>>> ce1987914326f7bdf07a27a37f95e9934d66b789
   m_Ortho:
     m_Target: 1
     speed: 2

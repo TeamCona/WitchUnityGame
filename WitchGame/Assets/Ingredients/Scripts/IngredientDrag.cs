@@ -45,4 +45,9 @@ public class IngredientDrag : MonoBehaviour {
 	}
 		
 
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> b7392c7e29f1ffb74212e8062db8e8d535ee07a9
 }
