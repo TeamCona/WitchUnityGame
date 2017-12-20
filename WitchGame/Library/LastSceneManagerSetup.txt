@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FrontDesk/FrontDesk.unity
+- path: Assets/MagicBook/MagicBook.unity
   isLoaded: 1
   isActive: 1
