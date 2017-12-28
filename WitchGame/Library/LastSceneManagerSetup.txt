@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/MagicBook/MagicBook.unity
-=======
-- path: Assets/FDesk/FDesk.unity
->>>>>>> cc3dbde2d3c11cd281d177fa958706078594ed81
+- path: Assets/Menu/Menu.unity
   isLoaded: 1
   isActive: 1
