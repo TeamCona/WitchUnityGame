@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BookDisplay : MonoBehaviour
 {
-    //TO DO
-    //Add code that will allow the user to turn the page
+	public void OnMouseDown()
+	{
+		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		SceneManager.LoadScene("MagicBook/OpenBook");
+		Debug.Log ("Works");
+	}
 }
