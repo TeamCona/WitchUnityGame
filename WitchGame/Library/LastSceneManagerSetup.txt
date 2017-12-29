@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MagicBook/MagicBook.unity
+- path: Assets/Scenes/Ingredients.unity
   isLoaded: 1
   isActive: 1
