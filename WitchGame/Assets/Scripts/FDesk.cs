@@ -1,21 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
 public class FDesk : MonoBehaviour {
 
+    public Text timerText;
     public int potionneed1, potionneed2;
-    public float daytimer = 30.0f;
-    public float maintimer = 10.0f;
+    public float daytimer = 60.0f;
 
     /// <summary>
     /// This function is called at the start of the scene to initialise the first potions. For the starter level, we will only include the 2
     /// </summary>
     // Use this for initialization
     void Start () {
-
+        //timerText.text = daytimer.ToString();
         potionneed1 = 1;
         potionneed2 = 2;
     }
@@ -26,26 +27,27 @@ public class FDesk : MonoBehaviour {
     /// if the day ends
     /// </summary>
 	void Update () {
+
+        timerText.text = daytimer.ToString();
         daytimer -= Time.deltaTime;
-        maintimer -= Time.deltaTime;
 
         if (daytimer <= 0)
         {
             SceneManager.LoadScene("UpgradeShop");
         }
 
-        else
+        /*else
         {
             if (maintimer <= 0)
             {
                 updatenum();
             }
-        }
+        }*/
     }
 
-    private void updatenum()
+    /*private void updatenum()
     {
         print("Works");
         maintimer = 10.0f;
-    }
+    }*/
 }
