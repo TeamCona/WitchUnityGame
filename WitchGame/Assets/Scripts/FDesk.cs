@@ -23,18 +23,17 @@ public class FDesk : MonoBehaviour {
 	
 	// Update is called once per frame
     /// <summary>
-    /// This function is called everyframe and will use the floats initialised earlier to countdown until the either you may check for more potions or
-    /// if the day ends
+    /// This function will increment the timer
     /// </summary>
 	void Update () {
 
         timerText.text = daytimer.ToString();
-        daytimer -= Time.deltaTime;
+        daytimer += Time.deltaTime;
 
-        if (daytimer <= 0)
+        /*if (daytimer <= 0)
         {
             SceneManager.LoadScene("UpgradeShop");
-        }
+        }*/
 
         /*else
         {
@@ -45,9 +44,9 @@ public class FDesk : MonoBehaviour {
         }*/
     }
 
-    /*private void updatenum()
+    private void updatenum()
     {
         print("Works");
-        maintimer = 10.0f;
-    }*/
+        //maintimer = 10.0f;
+    }
 }
