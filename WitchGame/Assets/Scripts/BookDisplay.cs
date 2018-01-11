@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BookDisplay : MonoBehaviour
 {
     public Text timerText;
-    public static float daytimer;
+    public float daytimer;
 
     private void Start()
     {
@@ -16,7 +16,6 @@ public class BookDisplay : MonoBehaviour
 
     private void Update()
     {
-        
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
         FDesk.daytimer = daytimer;

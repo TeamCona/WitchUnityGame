@@ -16,8 +16,9 @@ public class FDesk : MonoBehaviour {
     /// This function is called at the start of the scene to initialise the first potions. For the starter level, we will only include the 2
     /// </summary>
     // Use this for initialization
-    void Start () {
-        //timerText.text = daytimer.ToString();
+    void Start ()
+    {
+
         potionneed1 = 1;
         potionneed2 = 2;
     }
@@ -28,37 +29,8 @@ public class FDesk : MonoBehaviour {
     /// </summary>
 	void Update () {
 
-        if(start == true)
-        {
-            daytimer = 0.0f;
-            start = false;
-        }
-
-        else
-        {
-
-        }
-
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
 
-        /*if (daytimer <= 0)
-        {
-            SceneManager.LoadScene("UpgradeShop");
-        }*/
-
-        /*else
-        {
-            if (maintimer <= 0)
-            {
-                updatenum();
-            }
-        }*/
     }
-
-    /*private void updatenum()
-    {
-        print("Works");
-        //maintimer = 10.0f;
-    }*/
 }

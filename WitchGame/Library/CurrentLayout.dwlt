@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Shona\Desktop\Netproject\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 30280000
-    m_LastClickedID: 10288
-    m_ExpandedIDs: 000000006c270000382900003a2900003c2900003e2900004029000000ca9a3bffffff7f
+    m_SelectedIDs: 0c280000
+    m_LastClickedID: 10252
+    m_ExpandedIDs: 00000000702700003a2900003c2900003e290000402900004229000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c270000382900003a2900003c2900003e29000040290000
+    m_ExpandedIDs: 00000000702700003a2900003c2900003e2900004029000042290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -411,7 +411,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e070000
+    m_SelectedIDs: 10280000
     m_LastClickedID: 0
-    m_ExpandedIDs: 2cdaffffaae0ffffaee4ffff98fbffff00000000
+    m_ExpandedIDs: 0464ffffee81ffffa682ffff5a83ffff0684ffffda84ffff8885ffff3486ffffdc86ffff8887ffff3c88ffff0e89ffffc494ffff5abfffff30c3ffffd0c5ffff18ceffff14cffffff6cfffff46f1ffff98fbffff00000000562e0000f42f00005a310000c23b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,14 +538,14 @@ MonoBehaviour:
     height: 421
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 107.13316542919759
+  lastFramingTime: 413.4144578164968
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.2963414, y: 0.99536663, z: -9.855453}
+    m_Target: {x: 2.4855819, y: -0.49650967, z: 0.2296525}
     speed: 2
-    m_Value: {x: 3.2963414, y: 0.99536663, z: -9.855453}
+    m_Value: {x: 2.4855819, y: -0.49650967, z: 0.2296525}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -573,9 +573,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.522079
+    m_Target: 12.279665
     speed: 2
-    m_Value: 7.522079
+    m_Value: 12.279665
   m_Ortho:
     m_Target: 1
     speed: 2

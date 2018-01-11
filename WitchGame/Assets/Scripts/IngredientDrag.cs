@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IngredientDrag : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class IngredientDrag : MonoBehaviour {
     //This section is used to enable the drag feature
     float distance = 10;
 
-	void OnMouseDrag()
+    void OnMouseDrag()
 	{
 		//Need to save previous Position
 		Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, distance);
