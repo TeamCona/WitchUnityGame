@@ -452,7 +452,6 @@ MonoBehaviour:
   timerText: {fileID: 1280094902}
   potionneed1: 0
   potionneed2: 0
-  daytimer: 0
 --- !u!1 &468086788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9852941, g: 0.24632353, b: 0.24632353, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

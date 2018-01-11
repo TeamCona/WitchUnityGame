@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 public class FDesk : MonoBehaviour {
 
     public Text timerText;
-    public int potionneed1, potionneed2;
-    public float daytimer = 60.0f;
+    public int potionneed1, potionneed2, potionneed3, potionneed4, count;
+    public bool start;
+    public static float daytimer;
 
     /// <summary>
     /// This function is called at the start of the scene to initialise the first potions. For the starter level, we will only include the 2
@@ -26,6 +27,17 @@ public class FDesk : MonoBehaviour {
     /// This function will increment the timer
     /// </summary>
 	void Update () {
+
+        if(start == true)
+        {
+            daytimer = 0.0f;
+            start = false;
+        }
+
+        else
+        {
+
+        }
 
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
@@ -44,9 +56,9 @@ public class FDesk : MonoBehaviour {
         }*/
     }
 
-    private void updatenum()
+    /*private void updatenum()
     {
         print("Works");
         //maintimer = 10.0f;
-    }
+    }*/
 }
