@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class FDesk : MonoBehaviour {
 
-    public Text timerText, Potion1Text, Potion2Text;
+    public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
     public static int potionneed1, potionneed2, potionneed3, potionneed4, day;
     public static float daytimer;
 
@@ -17,6 +17,7 @@ public class FDesk : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        potions();
         updatepotion();
     }
 	
@@ -28,23 +29,43 @@ public class FDesk : MonoBehaviour {
 
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
+
     }
 
-    void updatepotion()
+    void potions()
     {
         day = 1;
 
         if (day == 1)
         {
-            //potionneed1 = 1;
-            //potionneed2 = 1;
-
-            potionneed1 = 0;
-            potionneed2 = 0;
-
-            Potion1Text.text = potionneed1.ToString();
-            Potion2Text.text = potionneed2.ToString();
-
+            potionneed1 = 1;
+            potionneed2 = 1;
+            potionneed3 = 0;
+            potionneed4 = 0;
         }
+
+        if (day == 2)
+        {
+            potionneed1 = 2;
+            potionneed2 = 3;
+            potionneed3 = 2;
+            potionneed4 = 0;
+        }
+
+        if (day == 2)
+        {
+            potionneed1 = 3;
+            potionneed2 = 4;
+            potionneed3 = 3;
+            potionneed4 = 4;
+        }
+    }
+
+    void updatepotion()
+    {
+        Potion1Text.text = potionneed1.ToString();
+        Potion2Text.text = potionneed2.ToString();
+        Potion3Text.text = potionneed3.ToString();
+        Potion4Text.text = potionneed4.ToString();
     }
 }

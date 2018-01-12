@@ -647,6 +647,8 @@ MonoBehaviour:
   timerText: {fileID: 1280094902}
   Potion1Text: {fileID: 1811284770}
   Potion2Text: {fileID: 1589758320}
+  Potion3Text: {fileID: 1421982464}
+  Potion4Text: {fileID: 1491230187}
 --- !u!1 &468086788
 GameObject:
   m_ObjectHideFlags: 0
