@@ -7,9 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class FDesk : MonoBehaviour {
 
-    public Text timerText;
-    public int potionneed1, potionneed2, potionneed3, potionneed4, count;
-    public bool start;
+    public Text timerText, Potion1Text, Potion2Text;
+    public static int potionneed1, potionneed2, potionneed3, potionneed4, day;
     public static float daytimer;
 
     /// <summary>
@@ -18,9 +17,7 @@ public class FDesk : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-
-        potionneed1 = 1;
-        potionneed2 = 2;
+        updatepotion();
     }
 	
 	// Update is called once per frame
@@ -31,6 +28,20 @@ public class FDesk : MonoBehaviour {
 
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
+    }
 
+    void updatepotion()
+    {
+        day = 1;
+
+        if (day == 1)
+        {
+            potionneed1 = 1;
+            potionneed2 = 1;
+
+            Potion1Text.text = potionneed1.ToString();
+            Potion2Text.text = potionneed2.ToString();
+
+        }
     }
 }
