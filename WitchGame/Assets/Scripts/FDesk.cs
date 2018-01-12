@@ -36,8 +36,11 @@ public class FDesk : MonoBehaviour {
 
         if (day == 1)
         {
-            potionneed1 = 1;
-            potionneed2 = 1;
+            //potionneed1 = 1;
+            //potionneed2 = 1;
+
+            potionneed1 = 0;
+            potionneed2 = 0;
 
             Potion1Text.text = potionneed1.ToString();
             Potion2Text.text = potionneed2.ToString();
