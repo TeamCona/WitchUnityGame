@@ -18,12 +18,10 @@ public class UpgradeShop : MonoBehaviour {
     {
         ChangePotion();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
+    /// <summary>
+    /// Will check the day and will add the potion for that day
+    /// </summary>
     void ChangePotion()
     {
         if(FDesk.day == 2)
