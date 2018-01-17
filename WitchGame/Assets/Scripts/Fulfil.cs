@@ -57,5 +57,8 @@ public class Fulfil : MonoBehaviour {
         //Reset the timer for the next day
         FDesk.daytimer = 0;
 
+        //Increment the day
+        FDesk.day += 1;
+
     }
 }

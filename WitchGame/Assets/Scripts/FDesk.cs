@@ -23,7 +23,7 @@ public class FDesk : MonoBehaviour {
 	
 	// Update is called once per frame
     /// <summary>
-    /// This function will increment the timer
+    /// This function will increment the timer and show it on the GUI
     /// </summary>
 	void Update () {
 
@@ -32,6 +32,9 @@ public class FDesk : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// This function will check the day in game and make the potions needed for that day
+    /// </summary>
     void potions()
     {
         day = 1;
@@ -52,7 +55,7 @@ public class FDesk : MonoBehaviour {
             potionneed4 = 0;
         }
 
-        if (day == 2)
+        if (day == 3)
         {
             potionneed1 = 3;
             potionneed2 = 4;
@@ -61,6 +64,9 @@ public class FDesk : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// This function will add the amount of potions needed to the GUI
+    /// </summary>
     void updatepotion()
     {
         Potion1Text.text = potionneed1.ToString();
