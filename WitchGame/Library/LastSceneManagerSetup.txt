@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/MagicBook.unity
-=======
-- path: Assets/Scenes/UpgradeShop.unity
->>>>>>> 387e78572c4e772134309c38e151a1c0368b1036
+- path: Assets/Scenes/Ingredients.unity
   isLoaded: 1
   isActive: 1
