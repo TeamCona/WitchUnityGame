@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Ingredients.unity
+- path: Assets/Scenes/Cauldron.unity
   isLoaded: 1
   isActive: 1
