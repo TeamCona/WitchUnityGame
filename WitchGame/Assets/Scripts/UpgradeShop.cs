@@ -9,6 +9,8 @@ public class UpgradeShop : MonoBehaviour {
 
     public Sprite potion3;
     public Sprite potion4;
+	public Text MoneyText;
+	public int money;
     
 	// Use this for 
     /// <summary>
@@ -32,5 +34,8 @@ public class UpgradeShop : MonoBehaviour {
         {
             gameObject.GetComponent<Image>().sprite = potion4;
         }
+
+		money = Fulfil.cashmonay;
+		MoneyText.text = money.ToString();
     }
 }
