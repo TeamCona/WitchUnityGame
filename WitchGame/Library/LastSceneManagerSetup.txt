@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/StartCutScene1.unity
-=======
-- path: Assets/Scenes/UpgradeShop.unity
->>>>>>> 5a069c316843611551a9dd64842e3ca5c1473817
+- path: Assets/Scenes/MagicBook.unity
   isLoaded: 1
   isActive: 1
