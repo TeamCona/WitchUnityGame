@@ -15,7 +15,7 @@ public class UpgradeShop : MonoBehaviour {
 	public Text CostText2;
 
 	//Amount of money owned and needed for purchases
-	public int money;
+	//public int money;
 	public int cost1;
 	public int cost2;
 	public int upgrade1, upgrade2;
@@ -26,8 +26,10 @@ public class UpgradeShop : MonoBehaviour {
     /// </summary>
 	void Start ()
     {
+		//Example
+		Fulfil.cashmonay = 10;
         ChangePotion();
-		UpdateMoney();
+		//UpdateMoney();
 		UpdateCost ();
 	}
 
@@ -49,20 +51,24 @@ public class UpgradeShop : MonoBehaviour {
 	/// <summary>
 	/// Function will update the text that shows monwy availible
 	/// </summary>
-	void UpdateMoney()
-	{
-		money = Fulfil.cashmonay;
-		MoneyText.text = money.ToString();
-	}
+	//void UpdateMoney()
+	//{
+		//money = Fulfil.cashmonay;
+	//	MoneyText.text = Fulfil.cashmonay.ToString();
+	//}
 
+	/// <summary>
+	/// Upgrades the cost if an item has been purchased
+	/// </summary>
 	void UpdateCost()
 	{
+		//Fulfil.cashmonay = 10;
 		//Upgrade1
 		if (upgrade1 < 1) 
 		{
 			cost1 = 4;
 		}
-		if (upgrade1 == 1) 
+		else 
 		{
 			cost1 = 7;
 		}
@@ -72,7 +78,7 @@ public class UpgradeShop : MonoBehaviour {
 		{
 			cost2 = 5;
 		}
-		if (upgrade2 == 1) 
+		else 
 		{
 			cost2 = 9;
 		}
@@ -81,5 +87,36 @@ public class UpgradeShop : MonoBehaviour {
 
 		CostText1.text = cost1.ToString ();
 		CostText2.text = cost2.ToString ();
+
+		//Update money text
+
+		MoneyText.text = Fulfil.cashmonay.ToString();
+	}
+
+	/// <summary>
+	/// Buys caldron upgrade
+	/// </summary>
+	public void BuyCal()
+	{
+		if (cost2 <= Fulfil.cashmonay) 
+		{
+			Fulfil.cashmonay = Fulfil.cashmonay - cost2;
+			//TODO
+			//Change caldron timer here
+			upgrade2++;
+			UpdateCost();
+		}
+	}
+
+	public void BuySpace()
+	{
+		if (cost1 <= Fulfil.cashmonay) 
+		{
+			Fulfil.cashmonay = Fulfil.cashmonay - cost1;
+			//TODO
+			//Change space amount here
+			upgrade1++;
+			UpdateCost();
+		}
 	}
 }
