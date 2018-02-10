@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour {
 
@@ -10,15 +11,37 @@ public class DontDestroy : MonoBehaviour {
 	void Awake ()
     {
         //Function will find objects that were tagged and will destroy one to prevent 2 songs playing at once 
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Potion");
 
-        if(objs.Length > 1)
+		if(objs.Length > 1 )
         {
             Destroy(this.gameObject);
         }
+		else 
+		{
+			//Allows the music to keep looping
+			DontDestroyOnLoad (this.gameObject);
+		}
 
-        //Allows the music to keep looping
-        DontDestroyOnLoad(this.gameObject);
+	}
+
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
+
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		// here you can use scene.buildIndex or scene.name to check which scene was loaded
+		if (scene.name == "UpgradeShop"){
+			// Destroy the gameobject this script is attached to
+			Destroy(gameObject);
+		}
 	}
 	
 	
