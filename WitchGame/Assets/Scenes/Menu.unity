@@ -958,6 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1862126958}
   - component: {fileID: 1862126957}
+  - component: {fileID: 1862126959}
   - component: {fileID: 1862126956}
   m_Layer: 0
   m_Name: BackgroundMusic
@@ -966,17 +967,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1862126956
-MonoBehaviour:
+--- !u!81 &1862126956
+AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862126955}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b5f4c913494e546908369818f860e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1862126957
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1070,6 +1067,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1862126959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862126955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaa585f942ae5a489ed18edf6547ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1950024503
 GameObject:
   m_ObjectHideFlags: 0
