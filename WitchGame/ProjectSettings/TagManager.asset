@@ -42,6 +42,9 @@ TagManager:
   - name: Background
     uniqueID: 3799987347
     locked: 0
+  - name: Bannerlayer
+    uniqueID: 1208641157
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
