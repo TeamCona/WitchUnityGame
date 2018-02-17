@@ -21,6 +21,7 @@ public class FinishDayClick : MonoBehaviour
 		{
 			Debug.Log ("Day thing works");
 			FDesk.day++;
+			//Debug.Log (FDesk.day);
 			SceneManager.LoadScene("FDesk");
 		}
 	}
