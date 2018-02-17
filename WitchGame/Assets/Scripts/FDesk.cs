@@ -10,6 +10,9 @@ public class FDesk : MonoBehaviour {
     public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
     public static int potionneed1, potionneed2, potionneed3, potionneed4, day;
     public static float daytimer;
+	//public Transform Potion;
+	public GameObject Potion;
+
 
     /// <summary>
     /// This function is called at the start of the scene to initialise the first potions. For the starter level, we will only include the 2
@@ -19,8 +22,14 @@ public class FDesk : MonoBehaviour {
     {
         potions();
         updatepotion();
-    }
-	
+		Create ();
+	}
+
+	void Create()
+	{
+		Instantiate (Potion);
+		Debug.Log ("Ins works");
+	}
 	// Update is called once per frame
     /// <summary>
     /// This function will increment the timer and show it on the GUI

@@ -8,6 +8,7 @@ public class PotionTest : MonoBehaviour {
 
 	public Sprite Empty;
 	public Sprite Full;
+	public Transform Potion;
 
 
 	/*float timer = 1f;
@@ -16,6 +17,12 @@ public class PotionTest : MonoBehaviour {
 	void Start()
 	{
 		this.gameObject.GetComponent<SpriteRenderer> ().sprite = Empty;
+	}
+
+	void Create()
+	{
+		//Instantiate (Potion, new Vector3 (0, -0, -1), Quaternion.identity);
+		Debug.Log ("Instanciate Works");
 	}
 
 	/*void Update()

@@ -19,6 +19,8 @@ public class UpgradeShop : MonoBehaviour {
 	public int cost1;
 	public int cost2;
 	public int upgrade1, upgrade2;
+
+	public static int addPotions = 0;
     
 	// Use this for 
     /// <summary>
@@ -115,6 +117,7 @@ public class UpgradeShop : MonoBehaviour {
 			Fulfil.cashmonay = Fulfil.cashmonay - cost1;
 			//TODO
 			//Change space amount here
+
 			upgrade1++;
 			UpdateCost();
 		}
