@@ -40,9 +40,15 @@ MonoBehaviour:
     y: 0
     width: 823
     height: 449
+<<<<<<< HEAD
   m_MinSize: {x: 104, y: 121}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 12}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
   m_Panes:
   - {fileID: 18}
   - {fileID: 12}
@@ -95,7 +101,11 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 48
+=======
+  controlID: 26
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,9 +263,15 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 449
+<<<<<<< HEAD
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
   m_Panes:
   - {fileID: 17}
   - {fileID: 13}
@@ -401,19 +417,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Textures/Characters
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Textures/Characters
+=======
+    - Assets/Resources/Prefabs
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Resources/Prefabs
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sastr\OneDrive\Documents\Computer Science\Year 3\_Net\WitchGame\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: c4330000
     m_LastClickedID: 13252
     m_ExpandedIDs: 00000000842a0000b22a0000402c0000422c0000442c0000462c0000482c000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: bc280000
+    m_LastClickedID: 10428
+    m_ExpandedIDs: 00000000842700007e280000cc290000ce290000d0290000d2290000d429000000ca9a3bffffff7f
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -441,7 +471,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000842a00003e2b0000402c0000422c0000442c0000462c0000482c0000
+=======
+    m_ExpandedIDs: 00000000842700007e280000cc290000ce290000d0290000d2290000d4290000
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,23 +591,29 @@ MonoBehaviour:
     height: 428
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: defefeff
     m_LastClickedID: -65826
     m_ExpandedIDs: 16ebffff4cf7ffff00000000
+=======
+    m_SelectedIDs: 8a270000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbfffff4ffffff00000000
+>>>>>>> 54ee3eae9babe0aba6ce37682ebec07fa89cb5ef
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Potion(Clone)
+      m_OriginalName: Potion(Clone)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -12890
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 

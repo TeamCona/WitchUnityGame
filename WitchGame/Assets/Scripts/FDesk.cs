@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class FDesk : MonoBehaviour {
 
     public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
-    public static int potionneed1, potionneed2, potionneed3, potionneed4, day;
+	public static int potionneed1, potionneed2, potionneed3, potionneed4 ;
+	public static float day = 1;
     public static float daytimer;
 	//public Transform Potion;
 	public GameObject Potion;
@@ -25,9 +26,26 @@ public class FDesk : MonoBehaviour {
 		Create ();
 	}
 
+	/// <summary>
+	/// This function will create instances of the the potion. Each one is cloned from a prefab. The first two are automatically cloned, the other two only become
+	/// availible if they are purchased in the upgrade shop.
+	/// </summary>
 	void Create()
 	{
-		Instantiate (Potion);
+		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -3, -1), Quaternion.identity);
+		GameObject po2 = (GameObject)Instantiate (Potion, new Vector3 (-5, -3, -1), Quaternion.identity);
+
+		if (UpgradeShop.upgrade1 == 1) 
+		{
+			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
+		}
+
+		if (UpgradeShop.upgrade1 == 2) 
+		{
+			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
+			GameObject po4 = (GameObject)Instantiate (Potion, new Vector3 (-1, -3, -1), Quaternion.identity);
+		}
+			
 		Debug.Log ("Ins works");
 	}
 	// Update is called once per frame
@@ -46,7 +64,7 @@ public class FDesk : MonoBehaviour {
     /// </summary>
     void potions()
     {
-        day = 1;
+        //day = 1;
 
         if (day == 1)
         {
