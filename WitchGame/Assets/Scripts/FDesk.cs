@@ -32,8 +32,8 @@ public class FDesk : MonoBehaviour {
 	/// </summary>
 	void Create()
 	{
-		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -3, -1), Quaternion.identity);
-		GameObject po2 = (GameObject)Instantiate (Potion, new Vector3 (-5, -3, -1), Quaternion.identity);
+		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -4, -1), Quaternion.identity);
+		GameObject po2 = (GameObject)Instantiate (Potion, new Vector3 (-5, -4, -1), Quaternion.identity);
 
 		if (UpgradeShop.upgrade1 == 1) 
 		{
