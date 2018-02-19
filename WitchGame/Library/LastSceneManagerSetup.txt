@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/StartCutScene1.unity
+=======
+- path: Assets/Scenes/FDesk.unity
+>>>>>>> 54a8ad0dcbb12c5a2071cd84fd64e633968ee61e
   isLoaded: 1
   isActive: 1

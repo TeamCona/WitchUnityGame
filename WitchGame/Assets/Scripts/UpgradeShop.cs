@@ -30,7 +30,7 @@ public class UpgradeShop : MonoBehaviour {
 	void Start ()
     {
 		//Example
-		Fulfil.cashmonay = 10;
+		//Fulfil.cashmonay = 10;
         ChangePotion();
 		//UpdateMoney();
 		UpdateCost ();
@@ -97,27 +97,27 @@ public class UpgradeShop : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Buys caldron upgrade
+	/// This upgrade will cut the time for potion making by a third and then a half by incrementing upgrade 2 which will affect code in the Cauldron script.
 	/// </summary>
 	public void BuyCal()
 	{
 		if (cost2 <= Fulfil.cashmonay) 
 		{
 			Fulfil.cashmonay = Fulfil.cashmonay - cost2;
-			//TODO
-			//Change caldron timer here
 			upgrade2++;
 			UpdateCost();
 		}
 	}
 
+	/// <summary>
+	/// This function will add an extra potion to the bar if there is enough money. By incrementing upgrade one variable, the front desk will instanciate
+	/// another potion.
+	/// </summary>
 	public void BuySpace()
 	{
 		if (cost1 <= Fulfil.cashmonay) 
 		{
 			Fulfil.cashmonay = Fulfil.cashmonay - cost1;
-			//TODO
-			//Change space amount here
 			upgrade1++;
 			UpdateCost();
 		}
