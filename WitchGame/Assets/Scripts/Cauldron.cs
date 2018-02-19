@@ -7,7 +7,7 @@ public class Cauldron : MonoBehaviour {
 
 	//Will change if the cauldron has been activated
 	static bool Cal = false;
-	static int slot;
+	static int seconds;
 	static int potionType;
 	public Sprite Potion1, Potion2, Potion3, Potion4;
 
@@ -71,31 +71,52 @@ public class Cauldron : MonoBehaviour {
 		}
 	}
 
+
+	/// <summary>
+	/// This function will check for cauldron upgrades and cook a potionfor a certain amount of time. It will also change the sprite.
+	/// </summary>
+	/// <returns>The time.</returns>
 	public IEnumerator CauldronTime()
 	{
-		//potionType = "Second potion";
-		potionType = 1;
+		//This will determine how long the caulfron will take depending on upgrades. Upgrade2 will increment in upgrade shop if money is spent.
+		if (UpgradeShop.upgrade2 == 1) 
+		{
+			seconds = 2;
+		}
 
+		if (UpgradeShop.upgrade2 == 2) 
+		{
+			seconds = 1;
+		}
+
+		else 
+		{
+			seconds = 3;
+		}
+			
+
+
+		//this will check which potion has been made, how long to cook it and what sprite will be shown before putting it back on the bottom bar.
 		if (potionType == 1) 
 		{
-			yield return new WaitForSeconds (2);
+			yield return new WaitForSeconds (seconds*1);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion1;
 		}
 
 		if (potionType == 2) 
 		{
-			yield return new WaitForSeconds (2);
+			yield return new WaitForSeconds (seconds*2);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion2;
 		}
 
 		if (potionType == 3)
 		{
-			yield return new WaitForSeconds (2);
+			yield return new WaitForSeconds (seconds*3);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion3;
 		}
 		if(potionType == 4)
 		{
-			yield return new WaitForSeconds (2);
+			yield return new WaitForSeconds (seconds*4);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion4;
 		}
 
