@@ -58,5 +58,4 @@ public class PotionTest : MonoBehaviour {
 
 		Debug.Log ("Drag should work");
 	}
-		
 }
