@@ -6,16 +6,10 @@ using UnityEngine.SceneManagement;
 public class Cauldron : MonoBehaviour {
 
 	//Will change if the cauldron has been activated
-	static bool Cal = false;
+	static bool cooked = false;
 	static int seconds;
 	static int potionType;
-	public Sprite Potion1, Potion2, Potion3, Potion4;
-
-	void Start()
-	{
-		//Create temporary reference to the current scene
-		 //Scene currentscene = SceneManager.GetActiveScene();
-	}
+	public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
 
 	/// <summary>
 	/// This fuction will check when the mouse has ben clicked which scene th user is in. If thyre in the cauldron scene, the cauldron fucnction will be called.
@@ -25,6 +19,11 @@ public class Cauldron : MonoBehaviour {
 
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
+
+		//TODO
+		//Remove this and set variable in ingredients
+		potionType = 2;
+
 
 		if (sceneName == "Cauldron") 
 		{
@@ -40,6 +39,11 @@ public class Cauldron : MonoBehaviour {
 
 	}
 
+
+	/// <summary>
+	/// This will check if the object is in the correct space and if it's finished going through the process. If so it will remove on from the potion
+	/// needed, will change the sprite to an empty potion and will set cooke, the varivle that checks if the process has been followed to false again.
+	/// </summary>
 	void DeliverItem()
 	{
 		if (transform.position.x > 4.4 && transform.position.x < 5.3) 
@@ -48,26 +52,47 @@ public class Cauldron : MonoBehaviour {
 			Debug.Log (transform.position);
 			if (transform.position.y < 3.4 && transform.position.y > 2.4) 
 			{
-				Debug.Log ("Deliver here");
+				if (cooked == true) {
+					if (potionType == 1) 
+					{
+						FDesk.potionneed1--;
+					}
+					if (potionType == 2) 
+					{
+						FDesk.potionneed2--;
+					}
+					if (potionType == 3) 
+					{
+						FDesk.potionneed3--;
+					}
+					if (potionType == 4) 
+					{
+						FDesk.potionneed4--;
+					}
+
+					this.gameObject.GetComponent<SpriteRenderer> ().sprite = Empty;
+					cooked = false;
+
+				}
+
+				transform.position = new Vector3 (-7, -4, -1);
 			}
 		}
 	}
 
-
+	/// <summary>
+	/// This function will check if the object is in the correct space. If so it will change the location of the potion to be more central and 
+	/// then call Cauldron time.
+	/// </summary>
 	void CauldronOn()
 	{
-		//if(GameObject.Find("Potion").transform.position
-		//Vector3 p = transform.position;
-		//Debug.Log(p);
-		float timeLeft = 100;
-
 		//Checks if the potion is in the cauldron space
 		if (transform.position.x > -3 && transform.position.x < 0)
 		{
 			if (transform.position.y < 2 && transform.position.y > 0) 
 			{
 				Debug.Log ("Cauldron");
-				Cal = true;
+				//Cal = true;
 				transform.position = new Vector3 (-2, 1, 0);
 				StartCoroutine (CauldronTime ());
 			}
@@ -97,8 +122,6 @@ public class Cauldron : MonoBehaviour {
 			seconds = 3;
 		}
 			
-		potionType = 1;
-
 		//this will check which potion has been made, how long to cook it and what sprite will be shown before putting it back on the bottom bar.
 		if (potionType == 1) 
 		{
@@ -122,7 +145,8 @@ public class Cauldron : MonoBehaviour {
 			yield return new WaitForSeconds (seconds*4);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion4;
 		}
-
+							
+		cooked = true;
 		transform.position = new Vector3 (-7, -4, -1);
 
 	}

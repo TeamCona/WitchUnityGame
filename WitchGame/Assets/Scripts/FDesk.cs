@@ -10,6 +10,7 @@ public class FDesk : MonoBehaviour {
     public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
 	public static int potionneed1, potionneed2, potionneed3, potionneed4 ;
 	public static float day = 1;
+	public static int cashmonay;
     public static float daytimer;
 	//public Transform Potion;
 	public GameObject Potion;
@@ -52,8 +53,9 @@ public class FDesk : MonoBehaviour {
     /// <summary>
     /// This function will increment the timer and show it on the GUI
     /// </summary>
-	void Update () {
-
+	void Update () 
+	{
+		updatepotion();
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
 
@@ -100,5 +102,63 @@ public class FDesk : MonoBehaviour {
         Potion2Text.text = potionneed2.ToString();
         Potion3Text.text = potionneed3.ToString();
         Potion4Text.text = potionneed4.ToString();
+		finishlevel ();
     }
+
+	//public static bool dis = false;
+	/// <summary>
+	/// This funtion will check if the conditions are met to finish the level and if they are, will transition to the upgradeshop
+	/// </summary>
+	public void finishlevel()
+	{
+
+		//Checks the requirements are met
+		if (potionneed1 == 0 && potionneed2  == 0 && potionneed3 == 0 && potionneed4 == 0)
+		{
+			//This variable allows the potions to be destroyed
+			//dis = true;
+
+			//This section allocate money to the player depending on how much time they took to complete the level
+			if(daytimer < 120)
+			{
+				cashmonay += 3;
+			}
+
+			if (daytimer < 360 && daytimer > 120)
+			{
+				cashmonay += 2;
+			}
+
+			if (daytimer > 360)
+			{
+				cashmonay += 3;
+			}
+
+			//This section will give the user money depending on what level they were playing.
+			if (FDesk.day == 1)
+			{
+				cashmonay += 10;
+			}
+
+			if (FDesk.day == 2)
+			{
+				cashmonay += 20;
+			}
+
+			if (FDesk.day == 3)
+			{
+				cashmonay += 30;
+			}
+
+			//Checks the button will work and transition to the next level
+			Debug.Log("Works");
+			SceneManager.LoadScene("UpgradeShop");
+
+			//Reset the timer for the next day
+			FDesk.daytimer = 0;
+		}
+
+		Debug.Log("Works");
+
+	}
 }
