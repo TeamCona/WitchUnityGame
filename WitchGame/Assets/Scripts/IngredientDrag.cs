@@ -5,17 +5,15 @@ using UnityEngine.UI;
 
 public class IngredientDrag : MonoBehaviour {
 
-    //Variables for the navigation buttons
 	public GameObject ingredients;
 	private int i;
-
 	float distance = 15;
 
-	void Start()
-	{
-		
-	}
-
+	/// <summary>
+	/// Raises the mouse down event.
+	/// Locates the tag of the game object and instansiates 
+	/// the chosen object
+	/// </summary>
 	void OnMouseDown()
 	{ 
 		if (gameObject.tag == "Feather") 
@@ -23,7 +21,36 @@ public class IngredientDrag : MonoBehaviour {
 			ingredients = GameObject.FindGameObjectWithTag ("Feather");
 			Instantiate (ingredients, transform.position, transform.rotation);
 		}
+
+		if (gameObject.tag == "FairyWings") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("FairyWings");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "UnicornHorn") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("UnicornHorn");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "DragonScales") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("DragonScales");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "VampireBlood") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("VampireBlood");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
 	}
+
+	/// <summary>
+	/// Raises the mouse drag event.
+	/// Enables user to drag object around screen
+	/// </summary>
     void OnMouseDrag()
 	{
 		//Need to save previous Position
@@ -32,7 +59,11 @@ public class IngredientDrag : MonoBehaviour {
 		transform.position = objPosition;
 	}
 		
-
+	/// <summary>
+	/// Raises the mouse up event.
+	/// Once the mouse button lifts up
+	/// The object is dropped into the mixing bowl
+	/// </summary>
 	void OnMouseUp()
 	{
 		//Sets to middle position

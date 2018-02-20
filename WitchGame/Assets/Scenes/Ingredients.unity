@@ -122,9 +122,10 @@ GameObject:
   - component: {fileID: 20786222}
   - component: {fileID: 20786221}
   - component: {fileID: 20786224}
+  - component: {fileID: 20786223}
   m_Layer: 0
   m_Name: FairyWings
-  m_TagString: Untagged
+  m_TagString: FairyWings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +187,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &20786223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20786220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65149166b2577ed4781e0d9eda9bd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: {fileID: 1884046722470330, guid: 06325ec27d843054f9a1bcda70f80d0d,
+    type: 2}
 --- !u!61 &20786224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -500,9 +514,10 @@ GameObject:
   - component: {fileID: 395545854}
   - component: {fileID: 395545853}
   - component: {fileID: 395545856}
+  - component: {fileID: 395545855}
   m_Layer: 0
   m_Name: VampireBlood
-  m_TagString: Untagged
+  m_TagString: VampireBlood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,6 +579,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395545855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395545852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65149166b2577ed4781e0d9eda9bd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: {fileID: 1609016524031174, guid: 221b82ec48ee2fa42978e103d7c10f9d,
+    type: 2}
 --- !u!61 &395545856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1025,9 +1053,10 @@ GameObject:
   - component: {fileID: 1432060670}
   - component: {fileID: 1432060669}
   - component: {fileID: 1432060672}
+  - component: {fileID: 1432060671}
   m_Layer: 0
   m_Name: UnicornHorn
-  m_TagString: Untagged
+  m_TagString: UnicornHorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1089,6 +1118,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432060671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1432060668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65149166b2577ed4781e0d9eda9bd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: {fileID: 1341949345992132, guid: d4638455b66a8d74da2238ea312e34f6,
+    type: 2}
 --- !u!61 &1432060672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1548,9 +1590,10 @@ GameObject:
   - component: {fileID: 2141684586}
   - component: {fileID: 2141684585}
   - component: {fileID: 2141684587}
+  - component: {fileID: 2141684588}
   m_Layer: 0
   m_Name: DragonScales
-  m_TagString: Untagged
+  m_TagString: DragonScales
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1637,3 +1680,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2141684588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141684584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65149166b2577ed4781e0d9eda9bd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: {fileID: 1789451194992126, guid: 9ba0eb4fdd961fa4c8a4cf2fcd87235f,
+    type: 2}

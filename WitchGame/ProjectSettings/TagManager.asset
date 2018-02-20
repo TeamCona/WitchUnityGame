@@ -7,6 +7,10 @@ TagManager:
   - music
   - Potion
   - Feather
+  - FairyWings
+  - UnicornHorn
+  - DragonScales
+  - VampireBlood
   layers:
   - Default
   - TransparentFX
