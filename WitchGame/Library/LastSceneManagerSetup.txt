@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EndCutScene.unity
+- path: Assets/Scenes/Ingredients.unity
   isLoaded: 1
   isActive: 1

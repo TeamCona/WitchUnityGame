@@ -6,12 +6,24 @@ using UnityEngine.UI;
 public class IngredientDrag : MonoBehaviour {
 
     //Variables for the navigation buttons
-    public Texture cal;
-    public Texture ing;
+	public GameObject ingredients;
+	private int i;
 
-    //This section is used to enable the drag feature
-    float distance = 10;
+	float distance = 15;
 
+	void Start()
+	{
+		
+	}
+
+	void OnMouseDown()
+	{ 
+		if (gameObject.tag == "Feather") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("Feather");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+	}
     void OnMouseDrag()
 	{
 		//Need to save previous Position
@@ -19,13 +31,11 @@ public class IngredientDrag : MonoBehaviour {
 		Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 		transform.position = objPosition;
 	}
-
-	//The ingredient is dropped with no collision
-	private Vector3 prevPosition;
-	private Transform ingredient;
+		
 
 	void OnMouseUp()
 	{
+		//Sets to middle position
 		transform.position = new Vector3 (0, 0, 0);
 	}
 

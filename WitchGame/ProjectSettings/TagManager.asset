@@ -6,6 +6,7 @@ TagManager:
   tags:
   - music
   - Potion
+  - Feather
   layers:
   - Default
   - TransparentFX
