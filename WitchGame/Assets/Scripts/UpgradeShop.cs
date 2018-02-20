@@ -29,10 +29,7 @@ public class UpgradeShop : MonoBehaviour {
     /// </summary>
 	void Start ()
     {
-		//Example
-		//Fulfil.cashmonay = 10;
         ChangePotion();
-		//UpdateMoney();
 		UpdateCost ();
 	}
 
@@ -50,15 +47,6 @@ public class UpgradeShop : MonoBehaviour {
             gameObject.GetComponent<Image>().sprite = potion4;
         }
     }
-
-	/// <summary>
-	/// Function will update the text that shows monwy availible
-	/// </summary>
-	//void UpdateMoney()
-	//{
-		//money = Fulfil.cashmonay;
-	//	MoneyText.text = Fulfil.cashmonay.ToString();
-	//}
 
 	/// <summary>
 	/// Upgrades the cost if an item has been purchased
@@ -93,7 +81,7 @@ public class UpgradeShop : MonoBehaviour {
 
 		//Update money text
 
-		MoneyText.text = Fulfil.cashmonay.ToString();
+		MoneyText.text = FDesk.cashmonay.ToString();
 	}
 
 	/// <summary>
@@ -101,9 +89,9 @@ public class UpgradeShop : MonoBehaviour {
 	/// </summary>
 	public void BuyCal()
 	{
-		if (cost2 <= Fulfil.cashmonay) 
+		if (cost2 <= FDesk.cashmonay) 
 		{
-			Fulfil.cashmonay = Fulfil.cashmonay - cost2;
+			FDesk.cashmonay = FDesk.cashmonay - cost2;
 			upgrade2++;
 			UpdateCost();
 		}
@@ -115,9 +103,9 @@ public class UpgradeShop : MonoBehaviour {
 	/// </summary>
 	public void BuySpace()
 	{
-		if (cost1 <= Fulfil.cashmonay) 
+		if (cost1 <= FDesk.cashmonay) 
 		{
-			Fulfil.cashmonay = Fulfil.cashmonay - cost1;
+			FDesk.cashmonay = FDesk.cashmonay - cost1;
 			upgrade1++;
 			UpdateCost();
 		}

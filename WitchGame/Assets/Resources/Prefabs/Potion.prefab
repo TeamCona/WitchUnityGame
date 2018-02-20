@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fa94e601cd23b4a8e9ef799bbb9c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Empty: {fileID: 21300000, guid: 8489711ac7c564e4f8a5ec19bf04a272, type: 3}
   Potion1: {fileID: 21300000, guid: 60c7fe1abda22f54393a879b1e576a9b, type: 3}
   Potion2: {fileID: 21300000, guid: 54e3736b72f267842a08ce10de643c6a, type: 3}
   Potion3: {fileID: 21300000, guid: 92846f351a4ae9447b9eab457bb1d13b, type: 3}
