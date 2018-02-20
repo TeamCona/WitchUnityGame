@@ -42,10 +42,14 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 683, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 105
+=======
+  controlID: 47
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -114,13 +118,19 @@ MonoBehaviour:
     y: 442
     width: 1225
     height: 289
+<<<<<<< HEAD
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
+=======
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 13}
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 1
+  m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -206,10 +216,14 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 731
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 51
+=======
+  controlID: 48
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +247,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 52
+=======
+  controlID: 49
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,7 +305,6 @@ MonoBehaviour:
     y: 181
     width: 973
     height: 501
-  m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,7 +331,6 @@ MonoBehaviour:
     y: 534
     width: 1223
     height: 268
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -333,13 +349,19 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Shona\Desktop\Netproject\WitchGame
+  m_LastProjectPath: C:\Users\sastr\OneDrive\Documents\Computer Science\Year 3\_Net\WitchGame\WitchGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 82270000
     m_LastClickedID: 10114
     m_ExpandedIDs: 0000000082270000c2270000ea290000ec290000ee290000f0290000f229000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: ca290000
+    m_LastClickedID: 10698
+    m_ExpandedIDs: 00000000ea280000442a0000462a0000482a00004a2a00004c2a000000ca9a3bffffff7f
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +389,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000082270000c2270000ea290000ec290000ee290000f0290000f2290000
+=======
+    m_ExpandedIDs: 00000000ea280000442a0000462a0000482a00004a2a00004c2a0000
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,8 +418,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 5acaffff
     m_LastClickedInstanceID: -13734
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -448,7 +479,6 @@ MonoBehaviour:
     y: 92
     width: 309
     height: 710
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -482,12 +512,17 @@ MonoBehaviour:
     y: 92
     width: 301
     height: 421
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 5acaffff
     m_LastClickedID: -13734
     m_ExpandedIDs: 9efbffff000000000a29000030290000
+=======
+    m_SelectedIDs: 8c320000
+    m_LastClickedID: 12940
+    m_ExpandedIDs: 484bffff7853ffffca64ffffb665ffff7c6cffff226fffff2270ffff8a71fffff272ffff6e88ffff7088ffff7888ffff8089ffff948fffff2896ffff2c99ffff06d4ffffc6d7ffffd6d9ffff56f7ffff5efaffff000000004a3100001832000022320000b8320000
+>>>>>>> eb9525decee42d6843e7c313bc61a76d01cc1c99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,10 +538,10 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - FDesk
+  - EndCutScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -536,16 +571,15 @@ MonoBehaviour:
     y: 92
     width: 918
     height: 421
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 0
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -1.6393352, y: 0.06795442, z: -0.0420482}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -1.6393352, y: 0.06795442, z: -0.0420482}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -554,7 +588,6 @@ MonoBehaviour:
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
-    showParticleSystems: 1
   grid:
     xGrid:
       m_Target: 0
@@ -573,9 +606,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 14.192208
     speed: 2
-    m_Value: 10
+    m_Value: 14.192208
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -613,7 +646,6 @@ MonoBehaviour:
     y: 92
     width: 918
     height: 421
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -686,8 +718,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 534
-    width: 1223
-    height: 268
-  m_PersistentViewDataDictionary: {fileID: 0}
+    x: 8
+    y: 718
+    width: 1366
+    height: 308

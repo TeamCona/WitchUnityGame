@@ -261,7 +261,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instructions
+  m_Text: 'Credits
+
+'
 --- !u!222 &129764679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -898,7 +900,7 @@ GameObject:
   - component: {fileID: 1739035182}
   - component: {fileID: 1739035181}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: EventManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChatManager : MonoBehaviour {
+
+	public Text nameText;
+	public Text chatText;
 
 	private Queue<string> sentences;
 
@@ -23,7 +27,7 @@ public class ChatManager : MonoBehaviour {
 	{
 		Debug.Log ("Starting chat" + chat.name);
 
-
+		nameText.text = chat.name;
 		sentences.Clear ();
 
 		foreach (string sentence in chat.sentences) {
@@ -33,6 +37,9 @@ public class ChatManager : MonoBehaviour {
 		DisplayNextSentence ();
 	}
 
+	/// <summary>
+	/// Displays the next sentence.
+	/// </summary>
 	public void DisplayNextSentence()
 	{
 		if (sentences.Count == 0) {
@@ -41,7 +48,26 @@ public class ChatManager : MonoBehaviour {
 		}
 
 		string sentence = sentences.Dequeue ();
-		Debug.Log (sentence);
+
+		///<summary>
+		/// This makes sure that the sentences arent overlapping
+		/// </summary>
+		StopAllCoroutines ();
+		StartCoroutine (TypeSentence (sentence));
+	}
+
+	/// <summary>
+	/// This section shows letters one by one
+	/// </summary>
+	/// <returns>The sentence.</returns>
+	/// <param name="sentence">Sentence.</param>
+	IEnumerator TypeSentence(string sentence)
+	{
+		chatText.text = "";
+		foreach (char letter in sentence.ToCharArray()) {
+			chatText.text += letter;
+			yield return null;
+		}
 	}
 
 	/// <summary>
