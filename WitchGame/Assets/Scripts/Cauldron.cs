@@ -31,11 +31,28 @@ public class Cauldron : MonoBehaviour {
 			Debug.Log ("Cauldron Scene");
 			CauldronOn ();
 		}
-		else
+		if (sceneName == "FDesk") 
 		{
-			Debug.Log ("Not cauldron scene");
+			Debug.Log ("Front desk");
+			DeliverItem ();
+			//Debug.Log (transform.position);
+		}
+
+	}
+
+	void DeliverItem()
+	{
+		if (transform.position.x > 4.4 && transform.position.x < 5.3) 
+		{
+
+			Debug.Log (transform.position);
+			if (transform.position.y < 3.4 && transform.position.y > 2.4) 
+			{
+				Debug.Log ("Deliver here");
+			}
 		}
 	}
+
 
 	void CauldronOn()
 	{
@@ -45,28 +62,14 @@ public class Cauldron : MonoBehaviour {
 		float timeLeft = 100;
 
 		//Checks if the potion is in the cauldron space
-		if (transform.position.x > -3 && transform.position.x < 0) {
-			if (transform.position.y < 2 && transform.position.y > 0) {
-				Debug.Log ("Cauldron is on bitches");
+		if (transform.position.x > -3 && transform.position.x < 0)
+		{
+			if (transform.position.y < 2 && transform.position.y > 0) 
+			{
+				Debug.Log ("Cauldron");
 				Cal = true;
 				transform.position = new Vector3 (-2, 1, 0);
 				StartCoroutine (CauldronTime ());
-
-				//yield return new WaitForSeconds (10);
-
-				/*while (Cal == true) 
-				{
-					if (timeLeft > 0) 
-					{
-						timeLeft -= Time.deltaTime;
-						Debug.Log (timeLeft);
-					}
-					else 
-					{
-						Cal = false;
-						Debug.Log ("Try to move");
-					}
-				}*/
 			}
 		}
 	}
@@ -94,7 +97,7 @@ public class Cauldron : MonoBehaviour {
 			seconds = 3;
 		}
 			
-
+		potionType = 1;
 
 		//this will check which potion has been made, how long to cook it and what sprite will be shown before putting it back on the bottom bar.
 		if (potionType == 1) 
