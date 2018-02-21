@@ -82,11 +82,6 @@ public class OpenCutScene : MonoBehaviour {
 			catM.SetActive (true);
 			Debug.Log ("Scene : " + scene);
 		}
-		if (scene == 7) 
-		{
-			SceneManager.LoadScene ("FDesk");
-			Debug.Log ("Scene : " + scene);
-		}
 
 		scene++;
 	}

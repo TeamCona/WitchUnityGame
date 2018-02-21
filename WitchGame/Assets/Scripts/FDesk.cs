@@ -133,7 +133,7 @@ public class FDesk : MonoBehaviour {
 	{
 
 		//Checks the requirements are met
-		if (potionneed1 == 0 && potionneed2  == 0 && potionneed3 == 0 && potionneed4 == 0)
+		if (potionneed1 < 1 && potionneed2  < 1 && potionneed3  < 1 && potionneed4 < 1)
 		{
 			//This variable allows the potions to be destroyed
 			//dis = true;

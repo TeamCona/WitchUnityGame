@@ -78,7 +78,8 @@ public class DontDestroy : MonoBehaviour {
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
 		// here you can use scene.buildIndex or scene.name to check which scene was loaded
-		if (scene.name == "UpgradeShop"){
+		if (scene.name == "UpgradeShop" || scene.name == "EndCutScene")
+		{
 			// Destroy the gameobject this script is attached to
 			Destroy(gameObject);
 		}

@@ -66,19 +66,19 @@ public class Cauldron : MonoBehaviour {
 			{
 				//if (gameObject.name == "po1") 
 				//{
-				if (potionType1 == 1 || potionType2 == 1 || potionType3 == 1 || potionType4 == 1 ) 
+				if (potionType1 == 1 ) 
 					{
 						FDesk.potionneed1--;
 					}
-				if (potionType1 == 2 || potionType2 == 2 || potionType3 == 2 || potionType4 == 2 ) 
+				if (potionType1 == 2  ) 
 					{
 						FDesk.potionneed2--;
 					}
-				if(potionType1 == 3 || potionType2 == 3 || potionType3 == 3 || potionType4 == 3 )
+				if(potionType1 == 3 )
 					{
 						FDesk.potionneed3--;
 					}
-				if (potionType1 == 4 || potionType2 == 4 || potionType3 == 4 || potionType4 == 4 )
+				if (potionType1 == 4  )
 					{
 						FDesk.potionneed4--;
 					}
