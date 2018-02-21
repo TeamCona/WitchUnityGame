@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/StartCutScene1.unity
+=======
+- path: Assets/Scenes/EndCutScene.unity
+>>>>>>> 7f2119ec0f9f0892e75ca6694c0bfc7058fbdc54
   isLoaded: 1
   isActive: 1

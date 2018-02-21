@@ -15,10 +15,12 @@ public class NPC : MonoBehaviour {
 		FindObjectOfType<ChatManager>().StartChat(chat);
 	}
 
+	/// <summary>
+	/// Removes the button.
+	/// </summary>
 	public void RemoveButton()
 	{
 		beginButton = GameObject.FindGameObjectWithTag ("BeginButton");
-		//Destroy(beginButton.gameObject);
 		beginButton.SetActive (false);
 	}
 		
