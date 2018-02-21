@@ -12,6 +12,7 @@ TagManager:
   - DragonScales
   - VampireBlood
   - MontyDeter
+  - Bowl
   layers:
   - Default
   - TransparentFX

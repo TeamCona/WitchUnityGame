@@ -6,8 +6,22 @@ using UnityEngine.UI;
 public class IngredientDrag : MonoBehaviour {
 
 	public GameObject ingredients;
-	private int i;
 	float distance = 15;
+
+	private GameObject[] getFeatherCount;
+	private int countFeather = 0;
+
+	private GameObject[] getFWingCount;
+	private int countFWing = 0;
+
+	private GameObject[] getUHornCount;
+	private int countUHorn = 0;
+
+	private GameObject[] getDScalesCount;
+	private int countDScales = 0;
+
+	private GameObject[] getVBloodCount;
+	private int countVBlood = 0;
 
 	/// <summary>
 	/// Raises the mouse down event.
@@ -20,6 +34,7 @@ public class IngredientDrag : MonoBehaviour {
 		{
 			ingredients = GameObject.FindGameObjectWithTag ("Feather");
 			Instantiate (ingredients, transform.position, transform.rotation);
+
 		}
 
 		if (gameObject.tag == "FairyWings") 
@@ -66,24 +81,44 @@ public class IngredientDrag : MonoBehaviour {
 	/// </summary>
 	void OnMouseUp()
 	{
-		//Sets to middle position
 		transform.position = new Vector3 (0, 0, 0);
 	}
 
-	//The ingredient has been dropped into the cauldron
-	void OnTriggerEnter2D()
+	/// <summary>
+	/// Adds sum of each single gameObject
+	/// and displays it back once button is pushed
+	/// </summary>
+	public void SumOfIngredients()
 	{
-		Debug.Log ("Trigger touched");
-	}
+		getFeatherCount = GameObject.FindGameObjectsWithTag ("Feather");
+		countFeather = getFeatherCount.Length;
+		countFeather = countFeather - 1;
+		Debug.Log ("Pheonix Feathers : " + countFeather);
 
-	void OnTriggerStay2D()
-	{
-		Debug.Log ("Still touching");
-	}
 
-	void OnTriggerExit2D()
-	{
-		Debug.Log ("Exit");
+		getFWingCount = GameObject.FindGameObjectsWithTag ("FairyWings");
+		countFWing = getFWingCount.Length;
+		countFWing = countFWing - 1;
+		Debug.Log ("Fairy Wings : " + countFWing);
+
+
+		getUHornCount = GameObject.FindGameObjectsWithTag ("UnicornHorn");
+		countUHorn = getUHornCount.Length;
+		countUHorn = countUHorn - 1;
+		Debug.Log ("Unicorn Horn : " + countUHorn); 
+
+
+		getDScalesCount = GameObject.FindGameObjectsWithTag ("DragonScales");
+		countDScales = getDScalesCount.Length;
+		countDScales = countDScales - 1;
+		Debug.Log ("Dragon Scales : " + countDScales); 
+
+
+		getVBloodCount = GameObject.FindGameObjectsWithTag ("VampireBlood");
+		countVBlood = getVBloodCount.Length;
+		countVBlood = countVBlood - 1;
+		Debug.Log ("Vampire Blood : " + countVBlood); 
+
 	}
 		
 }
