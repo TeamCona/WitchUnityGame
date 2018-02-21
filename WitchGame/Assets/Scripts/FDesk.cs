@@ -10,6 +10,7 @@ public class FDesk : MonoBehaviour {
     public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
 	public static int potionneed1, potionneed2, potionneed3, potionneed4 ;
 	public static float day = 1;
+	public static int time = 0;
 	public static int cashmonay;
     public static float daytimer;
 	public GameObject Potion, Potion2, Potion3, Potion4;
@@ -23,7 +24,7 @@ public class FDesk : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        potions();
+        //potions();
         updatepotion();
 		Create ();
 	}
@@ -76,7 +77,7 @@ public class FDesk : MonoBehaviour {
 
         if (day == 1)
         {
-            potionneed1 = 0;
+            potionneed1 = 1;
             potionneed2 = 1;
             potionneed3 = 0;
             potionneed4 = 0;
@@ -104,11 +105,16 @@ public class FDesk : MonoBehaviour {
     /// </summary>
     void updatepotion()
     {
+		if (time == 0) 
+		{
+			potions ();
+		}
         Potion1Text.text = potionneed1.ToString();
         Potion2Text.text = potionneed2.ToString();
         Potion3Text.text = potionneed3.ToString();
         Potion4Text.text = potionneed4.ToString();
 		finishlevel ();
+		time++;
     }
 
 	//public static bool dis = false;

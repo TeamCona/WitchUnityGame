@@ -31,6 +31,7 @@ public class UpgradeShop : MonoBehaviour {
     {
         ChangePotion();
 		UpdateCost ();
+		FDesk.time = 0;
 	}
 
     /// <summary>

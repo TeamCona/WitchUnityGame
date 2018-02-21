@@ -121,7 +121,7 @@ public class Cauldron : MonoBehaviour {
 	/// <returns>The time.</returns>
 	public IEnumerator CauldronTime()
 	{
-		potionType1 = 2;
+		//potionType1 = 2;
 
 		//if(gameObject.name == "po1")
 
