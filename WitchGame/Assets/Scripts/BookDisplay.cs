@@ -21,6 +21,9 @@ public class BookDisplay : MonoBehaviour
         FDesk.daytimer = daytimer;
     }
 
+	/// <summary>
+	/// This will open the book for the user when they click
+	/// </summary>
     public void OnMouseDown()
 	{
 		SceneManager.LoadScene("Scenes/OpenBook");

@@ -16,8 +16,8 @@ public class UpgradeShop : MonoBehaviour {
 
 	//Amount of money owned and needed for purchases
 	//public int money;
-	public int cost1;
-	public int cost2;
+	public static int cost1;
+	public static int cost2;
 	public static int upgrade1 = 0 ; 
 	public static int upgrade2 = 0 ;
 

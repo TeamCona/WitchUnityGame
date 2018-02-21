@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenCutScene : MonoBehaviour {
 
@@ -79,6 +80,11 @@ public class OpenCutScene : MonoBehaviour {
 			catMShock.SetActive (false);
 			Mona.SetActive(true);
 			catM.SetActive (true);
+			Debug.Log ("Scene : " + scene);
+		}
+		if (scene == 7) 
+		{
+			SceneManager.LoadScene ("FDesk");
 			Debug.Log ("Scene : " + scene);
 		}
 

@@ -354,8 +354,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1208641157
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7c187b6570484454e8aa0b65332cfc00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -630,7 +630,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &510197870
 RectTransform:
@@ -897,7 +897,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1095023839
 RectTransform:
@@ -1410,7 +1410,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ebbea4b01977bb640a11604ee4d69806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1555,8 +1555,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1208641157
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1a1bfb9a92577bc4dbfc367003f0af66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1590,7 +1590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1860083732}
   - component: {fileID: 1860083731}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GrampaCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1630,7 +1630,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7d56b7da0a29abb4188a88cc6f3a69a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1663,7 +1663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918764889}
   - component: {fileID: 1918764888}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,8 +1701,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -494979949
-  m_SortingLayer: -2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 291ab6dcfc1536948b4f4b09fdb9e27e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

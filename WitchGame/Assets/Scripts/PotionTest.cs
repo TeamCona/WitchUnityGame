@@ -12,6 +12,7 @@ public class PotionTest : MonoBehaviour {
 	//This section is used to enable the drag feature
 	float distance = 10;
 
+	//Drags potion to a new location
 	void OnMouseDrag()
 	{
 		//Need to save previous Position

@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Uses the singelton pattern to keep one instance of music looping
+/// </summary>
 [RequireComponent(typeof(AudioListener))]
 [RequireComponent(typeof(AudioSource))]
 class Music : MonoBehaviour

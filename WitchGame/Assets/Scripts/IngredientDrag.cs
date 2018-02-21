@@ -9,19 +9,19 @@ public class IngredientDrag : MonoBehaviour {
 	float distance = 15;
 
 	private GameObject[] getFeatherCount;
-	private int countFeather = 0;
+	public static int countFeather = 0;
 
 	private GameObject[] getFWingCount;
-	private int countFWing = 0;
+	public static int countFWing = 0;
 
 	private GameObject[] getUHornCount;
-	private int countUHorn = 0;
+	public static int countUHorn = 0;
 
 	private GameObject[] getDScalesCount;
-	private int countDScales = 0;
+	public static int countDScales = 0;
 
 	private GameObject[] getVBloodCount;
-	private int countVBlood = 0;
+	public static int countVBlood = 0;
 
 	/// <summary>
 	/// Raises the mouse down event.

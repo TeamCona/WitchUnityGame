@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DontDestroy : MonoBehaviour {
 
 	/// <summary>
-    /// This function will add the looping music to the game
+    /// This function 
     /// </summary>
 	void Awake ()
     {

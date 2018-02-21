@@ -14,14 +14,12 @@ public class FinishDayClick : MonoBehaviour
 	{
 		if (FDesk.day == 3) 
 		{
-			Debug.Log ("Add ending cutsene here");
+			SceneManager.LoadScene("EndCutScene");
 		} 
 
 		else 
 		{
-			Debug.Log ("Day thing works");
 			FDesk.day++;
-			//Debug.Log (FDesk.day);
 			SceneManager.LoadScene("FDesk");
 		}
 	}
