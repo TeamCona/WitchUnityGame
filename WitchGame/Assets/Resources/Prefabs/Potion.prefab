@@ -96,6 +96,7 @@ MonoBehaviour:
   Potion2: {fileID: 21300000, guid: 54e3736b72f267842a08ce10de643c6a, type: 3}
   Potion3: {fileID: 21300000, guid: 92846f351a4ae9447b9eab457bb1d13b, type: 3}
   Potion4: {fileID: 21300000, guid: c5491de8977da614983aaeeccad221ff, type: 3}
+  BadPotion: {fileID: 21300000, guid: 43c6e6cb71085ed4ba99060aa6e8cd74, type: 3}
 --- !u!114 &114879200050084454
 MonoBehaviour:
   m_ObjectHideFlags: 1
