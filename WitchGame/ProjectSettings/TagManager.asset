@@ -11,6 +11,7 @@ TagManager:
   - UnicornHorn
   - DragonScales
   - VampireBlood
+  - MontyDeter
   layers:
   - Default
   - TransparentFX
