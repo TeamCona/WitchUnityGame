@@ -4,26 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - music
-  - Potion
-  - Feather
-  - FairyWings
-  - UnicornHorn
-  - DragonScales
-  - VampireBlood
-  - MontyDeter
-  - Bowl
-<<<<<<< HEAD
-  - BeginButton
-  - MontyShock
-  - CatM_Shock
   - Mona
+  - CatMShock
+  - MontyDeter
+  - Potion
+  - VampireBlood
+  - Feather
+  - UnicornHorn
+  - FairyWings
+  - DragonScales
+  - music
+  - BeginButton
   - CatM
-=======
-  - Potion2
-  - Potion3
-  - Potion4
->>>>>>> 39ce33ea5034fd2aaf58aa8a18d8e947687789f7
+  - CatM_Shock
+  - MontyShock
   layers:
   - Default
   - TransparentFX
@@ -33,7 +27,7 @@ TagManager:
   - UI
   - 
   - 
-  - Background
+  - 
   - 
   - 
   - 
@@ -58,12 +52,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3799987347
-    locked: 0
-  - name: Bannerlayer
-    uniqueID: 1208641157
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 496804425
+    locked: 0
+  - name: Bannerlayer
+    uniqueID: 1508978463
     locked: 0
