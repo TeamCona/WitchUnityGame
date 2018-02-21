@@ -7,7 +7,7 @@ public class Cauldron : MonoBehaviour {
 
 	//Will change if the cauldron has been activated
 	public bool cooked;
-	static int seconds;
+	public static int seconds;
 	public bool empty;
 	public static int potionType1 = 0, potionType2 = 0, potionType3 = 0, potionType4 = 0;
 
@@ -21,20 +21,6 @@ public class Cauldron : MonoBehaviour {
 
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
-
-		Debug.Log (gameObject.name);
-
-		/*if (gameObject.name == "po1")
-		{
-			Debug.Log ("po one");
-		} */
-
-			
-		//TODO
-		//Remove this and set variable in ingredients
-		//potionType = 2;
-
-
 
 		//Check the name of the scene and call functions relevant to it
 		if (sceneName == "Cauldron") 
@@ -71,6 +57,7 @@ public class Cauldron : MonoBehaviour {
 			}
 		}
 
+		//If the potion is completed and put in the delivery window, the number needed will deincrement and the potion will be reset
 		if (transform.position.x > 4.4 && transform.position.x < 5.3) 
 		{
 
