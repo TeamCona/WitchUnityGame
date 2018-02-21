@@ -11,8 +11,6 @@ public class Cauldron : MonoBehaviour {
 	public bool empty;
 	public static int potionType1 = 0, potionType2 = 0, potionType3 = 0, potionType4 = 0;
 
-	//public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
-
 	public Sprite Empty, Potion1, Potion2, Potion3, Potion4, BadPotion;
 
 	/// <summary>
@@ -26,12 +24,10 @@ public class Cauldron : MonoBehaviour {
 
 		Debug.Log (gameObject.name);
 
-		if (gameObject.name == "po1")
+		/*if (gameObject.name == "po1")
 		{
 			Debug.Log ("po one");
-			Create.potionType1++;
-			Debug.Log (Create.potionType1);
-		} 
+		} */
 
 			
 		//TODO
@@ -62,6 +58,19 @@ public class Cauldron : MonoBehaviour {
 	/// </summary>
 	void DeliverItem()
 	{
+		Debug.Log (transform.position);
+
+		//Find potions to be trashed
+		if (transform.position.x > 3.7 && transform.position.x < 3.9) 
+		{
+			if (transform.position.y > -2 && transform.position.y < -.8) 
+			{
+				this.gameObject.GetComponent<SpriteRenderer> ().sprite = Empty;
+				transform.position = new Vector3 (-7, -4, -1);
+
+			}
+		}
+
 		if (transform.position.x > 4.4 && transform.position.x < 5.3) 
 		{
 
@@ -93,6 +102,7 @@ public class Cauldron : MonoBehaviour {
 
 				transform.position = new Vector3 (-7, -4, -1);
 			}
+
 	}
 
 	/// <summary>

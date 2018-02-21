@@ -139,7 +139,6 @@ public class IngredientDrag : MonoBehaviour {
 			Cauldron.potionType1 = 4;
 		}
 		else //Creating Failed Potion
-		if (countFWing == 0 && countUHorn == 1)
 		{
 			Cauldron.potionType1 = 5;
 		}
