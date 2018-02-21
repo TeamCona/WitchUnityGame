@@ -9,7 +9,7 @@ public class Cauldron : MonoBehaviour {
 	public bool cooked;
 	static int seconds;
 	public bool empty;
-	public static int potionType1, potionType2, potionType3, potionType4;
+	public static int potionType1 = 0, potionType2 = 0, potionType3 = 0, potionType4 = 0;
 
 	//public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
 

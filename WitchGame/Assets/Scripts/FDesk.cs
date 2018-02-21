@@ -54,7 +54,7 @@ public class FDesk : MonoBehaviour {
 			po4.name = "po4";
 		}
 			
-		Debug.Log ("Ins works");
+		Debug.Log ("Instantiate works works");
 	}
 	// Update is called once per frame
     /// <summary>
@@ -65,7 +65,22 @@ public class FDesk : MonoBehaviour {
 		updatepotion();
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
+
+		//If spacebar is pressed the rest of the game will be skipped
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			Debug.Log ("Space works");
+			Ending();
+		}
     }
+
+	/// <summary>
+	/// Will end the game early.
+	/// </summary>
+	void Ending()
+	{
+		SceneManager.LoadScene("EndCutScene");
+	}
 
 
     /// <summary>
@@ -169,9 +184,7 @@ public class FDesk : MonoBehaviour {
 			//Reset the timer for the next day
 			FDesk.daytimer = 0;
 		}
-
-		Debug.Log("Works");
-
+			
 	}
 		
 }
