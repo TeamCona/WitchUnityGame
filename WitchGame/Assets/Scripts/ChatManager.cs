@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ChatManager : MonoBehaviour {
 
@@ -75,6 +76,7 @@ public class ChatManager : MonoBehaviour {
 	/// </summary>
 	void EndChat()
 	{
+		SceneManager.LoadScene ("Scenes/FDesk");
 		Debug.Log ("Chat ended");
 	}
 

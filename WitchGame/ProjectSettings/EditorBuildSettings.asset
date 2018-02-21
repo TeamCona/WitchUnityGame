@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 82b8a57c55114214ea9ec02aa52cc81a
   - enabled: 1
+    path: Assets/Scenes/StartCutScene1.unity
+    guid: f3969fc5e10013d4da079f622bfe7ebb
+  - enabled: 1
     path: Assets/Scenes/FDesk.unity
     guid: 13e4d7ac50889c34e8e1d098a2fecf53
   - enabled: 1
@@ -20,12 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cauldron.unity
     guid: 33e280ff28e88a64987aedcc7895a49a
-  - enabled: 0
-    path: Assets/UpgradeShop/UpgradeShop.unity
-    guid: 28fcacf154ca55c4798be5c0e174dd69
   - enabled: 1
     path: Assets/Scenes/OpenBook.unity
     guid: 4e62ac10fc545394a8e5fcdfff45eeb7
   - enabled: 1
     path: Assets/Scenes/UpgradeShop.unity
     guid: 9654281498aab7e4d890d62aa17c7eb8
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 35cd669af4d64ee4e97927ccf4d90f83

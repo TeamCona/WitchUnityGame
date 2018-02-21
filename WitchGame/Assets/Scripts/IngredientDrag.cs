@@ -5,13 +5,52 @@ using UnityEngine.UI;
 
 public class IngredientDrag : MonoBehaviour {
 
-    //Variables for the navigation buttons
-    public Texture cal;
-    public Texture ing;
+	public GameObject ingredients;
+	private int i;
+	float distance = 15;
 
-    //This section is used to enable the drag feature
-    float distance = 10;
+	/// <summary>
+	/// Raises the mouse down event.
+	/// Locates the tag of the game object and instansiates 
+	/// the chosen object
+	/// </summary>
+	void OnMouseDown()
+	{ 
+		if (gameObject.tag == "Feather") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("Feather");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
 
+		if (gameObject.tag == "FairyWings") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("FairyWings");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "UnicornHorn") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("UnicornHorn");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "DragonScales") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("DragonScales");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+
+		if (gameObject.tag == "VampireBlood") 
+		{
+			ingredients = GameObject.FindGameObjectWithTag ("VampireBlood");
+			Instantiate (ingredients, transform.position, transform.rotation);
+		}
+	}
+
+	/// <summary>
+	/// Raises the mouse drag event.
+	/// Enables user to drag object around screen
+	/// </summary>
     void OnMouseDrag()
 	{
 		//Need to save previous Position
@@ -19,13 +58,15 @@ public class IngredientDrag : MonoBehaviour {
 		Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 		transform.position = objPosition;
 	}
-
-	//The ingredient is dropped with no collision
-	private Vector3 prevPosition;
-	private Transform ingredient;
-
+		
+	/// <summary>
+	/// Raises the mouse up event.
+	/// Once the mouse button lifts up
+	/// The object is dropped into the mixing bowl
+	/// </summary>
 	void OnMouseUp()
 	{
+		//Sets to middle position
 		transform.position = new Vector3 (0, 0, 0);
 	}
 

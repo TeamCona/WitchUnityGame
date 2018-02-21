@@ -7,7 +7,7 @@ public class Switchscenes : MonoBehaviour {
 
 	public void PlayGame()
 	{
-		SceneManager.LoadScene ("Scenes/FDesk");
+		
 	}
 
 	public void Instructions()
