@@ -8,7 +8,7 @@ public class Cauldron : MonoBehaviour {
 	//Will change if the cauldron has been activated
 	static bool cooked = false;
 	static int seconds;
-	static int potionType;
+	public static int potionType;
 	public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
 
 	/// <summary>
@@ -22,7 +22,7 @@ public class Cauldron : MonoBehaviour {
 
 		//TODO
 		//Remove this and set variable in ingredients
-		potionType = 2;
+		//potionType = 2;
 
 
 		if (sceneName == "Cauldron") 
