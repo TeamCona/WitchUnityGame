@@ -34,7 +34,6 @@ public class IngredientDrag : MonoBehaviour {
 		{
 			ingredients = GameObject.FindGameObjectWithTag ("Feather");
 			Instantiate (ingredients, transform.position, transform.rotation);
-
 		}
 
 		if (gameObject.tag == "FairyWings") 
@@ -85,10 +84,10 @@ public class IngredientDrag : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Adds sum of each single gameObject
-	/// and displays it back once button is pushed
+	/// Creates the mixture. By counting up all of the separate
+	/// prefabs and using if statements to check if it is a certain potion
 	/// </summary>
-	public void SumOfIngredients()
+	public void createMixture()
 	{
 		getFeatherCount = GameObject.FindGameObjectsWithTag ("Feather");
 		countFeather = getFeatherCount.Length;
@@ -119,6 +118,34 @@ public class IngredientDrag : MonoBehaviour {
 		countVBlood = countVBlood - 1;
 		Debug.Log ("Vampire Blood : " + countVBlood); 
 
+		//Creating Invinsibility Potion
+		if (countFeather == 2 && countVBlood == 1 && countDScales == 1)
+		{
+			Cauldron.potionType = 1;
+		}
+		else //Creating Love Potion
+		if (countFWing == 2 && countUHorn == 1)
+		{
+			Cauldron.potionType = 2;
+		}
+		else //Creating Corpses Breath
+		if (countVBlood == 4 && countDScales == 1)
+		{
+			Cauldron.potionType = 3;
+		}
+		else //Creating Luck Potion
+		if (countUHorn == 2 && countFeather == 3 && countFWing == 2)
+		{
+			Cauldron.potionType = 4;
+		}
+		/*else //Creating Failed Potion
+		if (countFWing == 0 && countUHorn == 1)
+		{
+			Cauldron.potionType = 5;
+		}*/
 	}
 		
 }
+
+
+// cauldron.potionType == 1;

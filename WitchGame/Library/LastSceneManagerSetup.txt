@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/FDesk.unity
+=======
+- path: Assets/Scenes/Ingredients.unity
+>>>>>>> b090c2cba1a743271103fb0af9e40582de13f4bf
   isLoaded: 1
   isActive: 1
