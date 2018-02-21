@@ -10,8 +10,15 @@ public class NPC : MonoBehaviour {
 	/// </summary>
 	public Chat chat;
 
+
+	/*void Start()
+	{
+		TriggerConversation ();
+	}*/
+
 	public void TriggerConversation()
 	{
 		FindObjectOfType<ChatManager>().StartChat(chat);
 	}
+
 }
