@@ -14,7 +14,6 @@ public class Test2 {
 		int po2 = 1;
 		int po3 = 0;
 		int po4 = 0;
-
 		/*f (FDesk.day == 1) 
 		{*/
 			Assert.AreEqual (po1, FDesk.potionneed1);

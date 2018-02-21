@@ -12,8 +12,9 @@ public class FDesk : MonoBehaviour {
 	public static float day = 1;
 	public static int cashmonay;
     public static float daytimer;
+	public GameObject Potion, Potion2, Potion3, Potion4;
+
 	//public Transform Potion;
-	public GameObject Potion;
 
 
     /// <summary>
@@ -34,17 +35,22 @@ public class FDesk : MonoBehaviour {
 	void Create()
 	{
 		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -4, -1), Quaternion.identity);
-		GameObject po2 = (GameObject)Instantiate (Potion, new Vector3 (-5, -4, -1), Quaternion.identity);
+		po1.name = "po1";
+		GameObject po2 = (GameObject)Instantiate (Potion2, new Vector3 (-5, -4, -1), Quaternion.identity);
+		po2.name = "po2";
 
 		if (UpgradeShop.upgrade1 == 1) 
 		{
-			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
+			GameObject po3 = (GameObject)Instantiate (Potion3, new Vector3 (-3, -3, -1), Quaternion.identity);
+			po3.name = "po3";
 		}
 
 		if (UpgradeShop.upgrade1 == 2) 
 		{
-			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
-			GameObject po4 = (GameObject)Instantiate (Potion, new Vector3 (-1, -3, -1), Quaternion.identity);
+			GameObject po3 = (GameObject)Instantiate (Potion3, new Vector3 (-3, -3, -1), Quaternion.identity);
+			GameObject po4 = (GameObject)Instantiate (Potion4, new Vector3 (-1, -3, -1), Quaternion.identity);
+			po3.name = "po3";
+			po4.name = "po4";
 		}
 			
 		Debug.Log ("Ins works");
@@ -58,8 +64,8 @@ public class FDesk : MonoBehaviour {
 		updatepotion();
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
-
     }
+
 
     /// <summary>
     /// This function will check the day in game and make the potions needed for that day
@@ -161,4 +167,5 @@ public class FDesk : MonoBehaviour {
 		Debug.Log("Works");
 
 	}
+		
 }

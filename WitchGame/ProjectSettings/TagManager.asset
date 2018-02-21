@@ -13,6 +13,9 @@ TagManager:
   - VampireBlood
   - MontyDeter
   - Bowl
+  - Potion2
+  - Potion3
+  - Potion4
   layers:
   - Default
   - TransparentFX

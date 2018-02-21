@@ -12,34 +12,38 @@ public class DontDestroy : MonoBehaviour {
     {
         //Function will find objects that were tagged and will destroy one to prevent 2 songs playing at once 
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Potion");
+
 		if (UpgradeShop.upgrade1 == 0) 
 		{
-			if (objs.Length > 2) 
+			if (objs.Length > 2)
 			{
 				Destroy (this.gameObject);
 			} 
-			else 
+			else
 			{
 				//Allows the music to keep looping
 				DontDestroyOnLoad (this.gameObject);
 			}
 		}
-		if (UpgradeShop.upgrade1 == 1) {
-			if (objs.Length > 3) {
+		if (UpgradeShop.upgrade1 == 1) 
+		{
+			if (objs.Length > 3)
+			{
 				Destroy (this.gameObject);
 			} 
-			else 
+			else
 			{
 				//Allows the music to keep looping
 				DontDestroyOnLoad (this.gameObject);
 			}
-		} 
-		else 
+		}
+		if (UpgradeShop.upgrade1 == 2) 
 		{
-			if (objs.Length > 4) {
+			if (objs.Length > 4)
+			{
 				Destroy (this.gameObject);
 			} 
-			else 
+			else
 			{
 				//Allows the music to keep looping
 				DontDestroyOnLoad (this.gameObject);

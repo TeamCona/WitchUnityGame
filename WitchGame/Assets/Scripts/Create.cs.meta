@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4f27af3fac7349a4ba9f66f9c1dc2d7c
+timeCreated: 1519227932
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Potion: {fileID: 1988920507751184, guid: 96cc1f30dd262854684ab71a26293ee2, type: 2}
+  - Potion2: {instanceID: 0}
+  - Potion3: {instanceID: 0}
+  - Potion4: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

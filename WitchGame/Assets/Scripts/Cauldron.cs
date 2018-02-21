@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class Cauldron : MonoBehaviour {
 
 	//Will change if the cauldron has been activated
-	public static bool cooked = false;
+	public bool cooked;
 	static int seconds;
-	public static int potionType;
-	static bool empty = true;
+	public int potionType1, potionType2, potionType3, potionType4;
+	public bool empty;
 	public Sprite Empty, Potion1, Potion2, Potion3, Potion4, BadPotion;
 
 	/// <summary>
@@ -21,10 +21,22 @@ public class Cauldron : MonoBehaviour {
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
 
+		Debug.Log (gameObject.name);
+
+		if (gameObject.name == "po1")
+		{
+			Debug.Log ("po one");
+			potionType1++;
+			Debug.Log (potionType1);
+		} 
+
+			
+
 		//Check the name of the scene and call functions relevant to it
 		if (sceneName == "Cauldron") 
 		{
 			Debug.Log ("Cauldron Scene");
+			Debug.Log (gameObject.name);
 			CauldronOn ();
 		}
 		if (sceneName == "FDesk") 
@@ -48,32 +60,31 @@ public class Cauldron : MonoBehaviour {
 			Debug.Log (transform.position);
 			if (transform.position.y < 3.4 && transform.position.y > 2.4) 
 			{
-				if (cooked == true) {
-					if (potionType == 1) 
+				//if (gameObject.name == "po1") 
+				//{
+				if (potionType1 == 1 || potionType2 == 1 || potionType3 == 1 || potionType4 == 1 ) 
 					{
 						FDesk.potionneed1--;
 					}
-					if (potionType == 2) 
+				if (potionType1 == 2 || potionType2 == 2 || potionType3 == 2 || potionType4 == 2 ) 
 					{
 						FDesk.potionneed2--;
 					}
-					if (potionType == 3) 
+				if(potionType1 == 3 || potionType2 == 3 || potionType3 == 3 || potionType4 == 3 )
 					{
 						FDesk.potionneed3--;
 					}
-					if (potionType == 4) 
+				if (potionType1 == 4 || potionType2 == 4 || potionType3 == 4 || potionType4 == 4 )
 					{
 						FDesk.potionneed4--;
 					}
 
-					this.gameObject.GetComponent<SpriteRenderer> ().sprite = Empty;
-					cooked = false;
-
-				}
+						this.gameObject.GetComponent<SpriteRenderer> ().sprite = Empty;
+						cooked = false;
+					}
 
 				transform.position = new Vector3 (-7, -4, -1);
 			}
-		}
 	}
 
 	/// <summary>
@@ -102,7 +113,10 @@ public class Cauldron : MonoBehaviour {
 	/// <returns>The time.</returns>
 	public IEnumerator CauldronTime()
 	{
-		potionType = 5;
+		//potionType = 5;
+
+		//if(gameObject.name == "po1")
+
 
 		//This will determine how long the caulfron will take depending on upgrades. Upgrade2 will increment in upgrade shop if money is spent.
 		if (UpgradeShop.upgrade2 == 1) 
@@ -121,13 +135,14 @@ public class Cauldron : MonoBehaviour {
 		}
 			
 		//this will check which potion has been made, how long to cook it and what sprite will be shown before putting it back on the bottom bar.
-		if (potionType == 1) 
+		if (potionType1 == 1 || potionType2 == 1 || potionType3 == 1 || potionType4 == 1) 
 		{
 			yield return new WaitForSeconds (seconds*1);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion1;
 		}
+			
 
-		if (potionType == 2) 
+		if (potionType1 == 2 || potionType2 == 2 || potionType3 == 2 || potionType4 == 2) 
 		{
 			yield return new WaitForSeconds (seconds*2);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion2;
@@ -149,8 +164,9 @@ public class Cauldron : MonoBehaviour {
 
 		}
 							
-		cooked = true;
+		//cooked = true;
 		transform.position = new Vector3 (-7, -4, -1);
 
+	}*/
 	}
 }
