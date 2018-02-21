@@ -70,7 +70,7 @@ public class FDesk : MonoBehaviour {
 
         if (day == 1)
         {
-            potionneed1 = 1;
+            potionneed1 = 0;
             potionneed2 = 1;
             potionneed3 = 0;
             potionneed4 = 0;

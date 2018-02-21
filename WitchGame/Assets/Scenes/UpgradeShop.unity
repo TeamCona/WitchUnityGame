@@ -681,7 +681,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -494979949
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 391dff49c0d038c4381ea914ddadae37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1768,11 +1768,8 @@ MonoBehaviour:
   MoneyText: {fileID: 2088700702}
   CostText1: {fileID: 1230785614}
   CostText2: {fileID: 646782047}
-  money: 0
   cost1: 0
   cost2: 0
-  upgrade1: 0
-  upgrade2: 0
 --- !u!1 &1578926295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,7 +2062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166, y: -26.5}
+  m_AnchoredPosition: {x: -166, y: -17.1}
   m_SizeDelta: {x: 70, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001572998
@@ -2139,7 +2136,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3216f52d4f641f948ad99a248cc8c6fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8489711ac7c564e4f8a5ec19bf04a272, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

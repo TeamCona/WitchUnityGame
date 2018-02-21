@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class Cauldron : MonoBehaviour {
 
 	//Will change if the cauldron has been activated
-	static bool cooked = false;
+	public static bool cooked = false;
 	static int seconds;
-	static int potionType;
-	public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
+	public static int potionType;
+	static bool empty = true;
+	public Sprite Empty, Potion1, Potion2, Potion3, Potion4, BadPotion;
 
 	/// <summary>
 	/// This fuction will check when the mouse has ben clicked which scene th user is in. If thyre in the cauldron scene, the cauldron fucnction will be called.
@@ -20,11 +21,7 @@ public class Cauldron : MonoBehaviour {
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
 
-		//TODO
-		//Remove this and set variable in ingredients
-		potionType = 2;
-
-
+		//Check the name of the scene and call functions relevant to it
 		if (sceneName == "Cauldron") 
 		{
 			Debug.Log ("Cauldron Scene");
@@ -38,7 +35,6 @@ public class Cauldron : MonoBehaviour {
 		}
 
 	}
-
 
 	/// <summary>
 	/// This will check if the object is in the correct space and if it's finished going through the process. If so it will remove on from the potion
@@ -106,6 +102,8 @@ public class Cauldron : MonoBehaviour {
 	/// <returns>The time.</returns>
 	public IEnumerator CauldronTime()
 	{
+		potionType = 5;
+
 		//This will determine how long the caulfron will take depending on upgrades. Upgrade2 will increment in upgrade shop if money is spent.
 		if (UpgradeShop.upgrade2 == 1) 
 		{
@@ -144,6 +142,11 @@ public class Cauldron : MonoBehaviour {
 		{
 			yield return new WaitForSeconds (seconds*4);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion4;
+		}
+		if (potionType == 5) 
+		{
+			this.gameObject.GetComponent<SpriteRenderer> ().sprite = BadPotion;
+
 		}
 							
 		cooked = true;

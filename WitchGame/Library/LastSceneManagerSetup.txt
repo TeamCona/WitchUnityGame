@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/InitTestScene636547587897248885.unity
-=======
-- path: Assets/Scenes/Menu.unity
->>>>>>> 741230ee6ad4d9e1b0b0075f24b1c44112a821a0
+- path: Assets/Scenes/FDesk.unity
   isLoaded: 1
   isActive: 1
