@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/OpenBook.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/StartCutScene1.unity
+=======
+- path: Assets/Scenes/FDesk.unity
+>>>>>>> 39ce33ea5034fd2aaf58aa8a18d8e947687789f7
+>>>>>>> 295d02b978f3b8445e87a2bb1033b5cfea8c596c
   isLoaded: 1
   isActive: 1
