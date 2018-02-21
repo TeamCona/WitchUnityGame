@@ -10,10 +10,12 @@ public class FDesk : MonoBehaviour {
     public Text timerText, Potion1Text, Potion2Text, Potion3Text, Potion4Text;
 	public static int potionneed1, potionneed2, potionneed3, potionneed4 ;
 	public static float day = 1;
+	public static int time = 0;
 	public static int cashmonay;
     public static float daytimer;
+	public GameObject Potion, Potion2, Potion3, Potion4;
+
 	//public Transform Potion;
-	public GameObject Potion;
 
 
     /// <summary>
@@ -22,7 +24,7 @@ public class FDesk : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        potions();
+        //potions();
         updatepotion();
 		Create ();
 	}
@@ -34,20 +36,25 @@ public class FDesk : MonoBehaviour {
 	void Create()
 	{
 		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -4, -1), Quaternion.identity);
-		GameObject po2 = (GameObject)Instantiate (Potion, new Vector3 (-5, -4, -1), Quaternion.identity);
+		po1.name = "po1";
+		GameObject po2 = (GameObject)Instantiate (Potion2, new Vector3 (-5, -4, -1), Quaternion.identity);
+		po2.name = "po2";
 
 		if (UpgradeShop.upgrade1 == 1) 
 		{
-			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
+			GameObject po3 = (GameObject)Instantiate (Potion3, new Vector3 (-3, -3, -1), Quaternion.identity);
+			po3.name = "po3";
 		}
 
 		if (UpgradeShop.upgrade1 == 2) 
 		{
-			GameObject po3 = (GameObject)Instantiate (Potion, new Vector3 (-3, -3, -1), Quaternion.identity);
-			GameObject po4 = (GameObject)Instantiate (Potion, new Vector3 (-1, -3, -1), Quaternion.identity);
+			GameObject po3 = (GameObject)Instantiate (Potion3, new Vector3 (-3, -3, -1), Quaternion.identity);
+			GameObject po4 = (GameObject)Instantiate (Potion4, new Vector3 (-1, -3, -1), Quaternion.identity);
+			po3.name = "po3";
+			po4.name = "po4";
 		}
 			
-		Debug.Log ("Ins works");
+		Debug.Log ("Instantiate works works");
 	}
 	// Update is called once per frame
     /// <summary>
@@ -59,7 +66,22 @@ public class FDesk : MonoBehaviour {
         timerText.text = daytimer.ToString();
         daytimer += Time.deltaTime;
 
+		//If spacebar is pressed the rest of the game will be skipped
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			Debug.Log ("Space works");
+			Ending();
+		}
     }
+
+	/// <summary>
+	/// Will end the game early.
+	/// </summary>
+	void Ending()
+	{
+		SceneManager.LoadScene("EndCutScene");
+	}
+
 
     /// <summary>
     /// This function will check the day in game and make the potions needed for that day
@@ -70,7 +92,7 @@ public class FDesk : MonoBehaviour {
 
         if (day == 1)
         {
-            potionneed1 = 0;
+            potionneed1 = 1;
             potionneed2 = 1;
             potionneed3 = 0;
             potionneed4 = 0;
@@ -98,11 +120,16 @@ public class FDesk : MonoBehaviour {
     /// </summary>
     void updatepotion()
     {
+		if (time == 0) 
+		{
+			potions ();
+		}
         Potion1Text.text = potionneed1.ToString();
         Potion2Text.text = potionneed2.ToString();
         Potion3Text.text = potionneed3.ToString();
         Potion4Text.text = potionneed4.ToString();
 		finishlevel ();
+		time++;
     }
 
 	//public static bool dis = false;
@@ -157,8 +184,7 @@ public class FDesk : MonoBehaviour {
 			//Reset the timer for the next day
 			FDesk.daytimer = 0;
 		}
-
-		Debug.Log("Works");
-
+			
 	}
+		
 }

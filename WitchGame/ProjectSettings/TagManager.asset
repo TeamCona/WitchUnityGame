@@ -13,11 +13,17 @@ TagManager:
   - VampireBlood
   - MontyDeter
   - Bowl
+<<<<<<< HEAD
   - BeginButton
   - MontyShock
   - CatM_Shock
   - Mona
   - CatM
+=======
+  - Potion2
+  - Potion3
+  - Potion4
+>>>>>>> 39ce33ea5034fd2aaf58aa8a18d8e947687789f7
   layers:
   - Default
   - TransparentFX

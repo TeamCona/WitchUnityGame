@@ -29,8 +29,10 @@ public class UpgradeShop : MonoBehaviour {
     /// </summary>
 	void Start ()
     {
+		FDesk.cashmonay = 10;
         ChangePotion();
 		UpdateCost ();
+		FDesk.time = 0;
 	}
 
     /// <summary>
@@ -84,6 +86,15 @@ public class UpgradeShop : MonoBehaviour {
 		MoneyText.text = FDesk.cashmonay.ToString();
 	}
 
+	int upgrade(int x)
+	{
+		int newcost;
+		newcost = x + 1;
+		Debug.Log (x + 1);
+		Debug.Log (newcost);
+		return newcost;
+	}
+
 	/// <summary>
 	/// This upgrade will cut the time for potion making by a third and then a half by incrementing upgrade 2 which will affect code in the Cauldron script.
 	/// </summary>
@@ -93,6 +104,8 @@ public class UpgradeShop : MonoBehaviour {
 		{
 			FDesk.cashmonay = FDesk.cashmonay - cost2;
 			upgrade2++;
+			//upgrade2 = upgrade (upgrade2);
+			Debug.Log (upgrade1);
 			UpdateCost();
 		}
 	}
