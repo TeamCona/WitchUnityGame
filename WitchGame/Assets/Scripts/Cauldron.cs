@@ -9,12 +9,11 @@ public class Cauldron : MonoBehaviour {
 	public static bool cooked = false;
 	static int seconds;
 	public static int potionType;
-<<<<<<< HEAD
-	public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
-=======
+
+	//public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
+
 	static bool empty = true;
 	public Sprite Empty, Potion1, Potion2, Potion3, Potion4, BadPotion;
->>>>>>> beecece63d0b03da6f6be8bda0c092c553c6ae31
 
 	/// <summary>
 	/// This fuction will check when the mouse has ben clicked which scene th user is in. If thyre in the cauldron scene, the cauldron fucnction will be called.
@@ -25,15 +24,13 @@ public class Cauldron : MonoBehaviour {
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
 
-<<<<<<< HEAD
 		//TODO
 		//Remove this and set variable in ingredients
 		//potionType = 2;
 
 
-=======
+
 		//Check the name of the scene and call functions relevant to it
->>>>>>> beecece63d0b03da6f6be8bda0c092c553c6ae31
 		if (sceneName == "Cauldron") 
 		{
 			Debug.Log ("Cauldron Scene");
