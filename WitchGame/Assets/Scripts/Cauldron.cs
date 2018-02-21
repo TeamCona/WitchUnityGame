@@ -8,16 +8,11 @@ public class Cauldron : MonoBehaviour {
 	//Will change if the cauldron has been activated
 	public bool cooked;
 	static int seconds;
-<<<<<<< HEAD
-	public int potionType1, potionType2, potionType3, potionType4;
 	public bool empty;
-=======
-	public static int potionType;
+	public static int potionType1, potionType2, potionType3, potionType4;
 
 	//public Sprite Empty, Potion1, Potion2, Potion3, Potion4;
 
-	static bool empty = true;
->>>>>>> b090c2cba1a743271103fb0af9e40582de13f4bf
 	public Sprite Empty, Potion1, Potion2, Potion3, Potion4, BadPotion;
 
 	/// <summary>
@@ -29,24 +24,21 @@ public class Cauldron : MonoBehaviour {
 		//return name of this scene
 		string sceneName = SceneManager.GetActiveScene().name;
 
-<<<<<<< HEAD
 		Debug.Log (gameObject.name);
 
 		if (gameObject.name == "po1")
 		{
 			Debug.Log ("po one");
-			potionType1++;
-			Debug.Log (potionType1);
+			Create.potionType1++;
+			Debug.Log (Create.potionType1);
 		} 
 
 			
-=======
 		//TODO
 		//Remove this and set variable in ingredients
 		//potionType = 2;
 
 
->>>>>>> b090c2cba1a743271103fb0af9e40582de13f4bf
 
 		//Check the name of the scene and call functions relevant to it
 		if (sceneName == "Cauldron") 
@@ -129,7 +121,7 @@ public class Cauldron : MonoBehaviour {
 	/// <returns>The time.</returns>
 	public IEnumerator CauldronTime()
 	{
-		//potionType = 5;
+		potionType1 = 2;
 
 		//if(gameObject.name == "po1")
 
@@ -151,38 +143,35 @@ public class Cauldron : MonoBehaviour {
 		}
 			
 		//this will check which potion has been made, how long to cook it and what sprite will be shown before putting it back on the bottom bar.
-		if (potionType1 == 1 || potionType2 == 1 || potionType3 == 1 || potionType4 == 1) 
+		if (potionType1 == 1 || potionType2 == 1 || potionType2 == 1 || potionType3 == 1) 
 		{
 			yield return new WaitForSeconds (seconds*1);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion1;
 		}
 			
-
 		if (potionType1 == 2 || potionType2 == 2 || potionType3 == 2 || potionType4 == 2) 
 		{
 			yield return new WaitForSeconds (seconds*2);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion2;
 		}
 
-		if (potionType == 3)
+		if (potionType1 == 3 || potionType2 == 3 || potionType2 == 3 || potionType3 == 3)
 		{
 			yield return new WaitForSeconds (seconds*3);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion3;
 		}
-		if(potionType == 4)
+		if(potionType1 == 4 || potionType2 == 4 || potionType2 == 4 || potionType3 == 4)
 		{
 			yield return new WaitForSeconds (seconds*4);
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Potion4;
 		}
-		if (potionType == 5) 
+		if (potionType1 == 5 || potionType2 == 5 || potionType2 == 5 || potionType3 == 5) 
 		{
 			this.gameObject.GetComponent<SpriteRenderer> ().sprite = BadPotion;
 
 		}
 							
-		//cooked = true;
-		transform.position = new Vector3 (-7, -4, -1);
+		this.transform.position = new Vector3 (-7, -4, -1);
 
-	}*/
 	}
 }

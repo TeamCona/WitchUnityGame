@@ -10,7 +10,7 @@ public class Create : MonoBehaviour {
 	static int seconds;
 	public int potionType;
 	public bool empty;
-	public Sprite Empty, potion1, potion2, potion3, potion4, BadPotion;
+	public static int potionType1, potionType2, potionType3, potionType4;
 
 	void Start()
 	{
@@ -24,11 +24,12 @@ public class Create : MonoBehaviour {
 	}
 		
 
+	/// <summary>
+	/// This will create the poyions on each scene
+	/// </summary>
 	void Createpotions()
 	{
-
-
-		/*
+		UpgradeShop.upgrade1 = 0;
 		GameObject po1 = (GameObject)Instantiate (Potion, new Vector3 (-7, -4, -1), Quaternion.identity);
 		po1.name = "po1";
 		GameObject po2 = (GameObject)Instantiate (Potion2, new Vector3 (-5, -4, -1), Quaternion.identity);
@@ -46,11 +47,6 @@ public class Create : MonoBehaviour {
 			po3.name = "po3";
 			po4.name = "po4";
 		}
-
-		if (gameObject.name == "po1") 
-		{
-			po1.GetComponent ("cooked") = true;
-			Debug.Log ("Works");
-		}*/
+			
 	}
 }
